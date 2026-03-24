@@ -1,0 +1,6002 @@
+[
+{
+  "model": "stocks.stock",
+  "pk": 1,
+  "fields": {
+    "symbol": "RELIANCE.NS",
+    "name": "Reliance Industries Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "1397.00",
+    "currency": "INR",
+    "pe_ratio": "22.70",
+    "discount_ratio": "18.78",
+    "last_updated": "2026-03-23T05:36:02.157Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 2,
+  "fields": {
+    "symbol": "HDFCBANK.NS",
+    "name": "HDFC Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "751.30",
+    "currency": "INR",
+    "pe_ratio": "16.77",
+    "discount_ratio": "34.43",
+    "last_updated": "2026-03-23T05:35:29.662Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 3,
+  "fields": {
+    "symbol": "ICICIBANK.NS",
+    "name": "ICICI Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1225.80",
+    "currency": "INR",
+    "pe_ratio": "16.74",
+    "discount_ratio": "28.25",
+    "last_updated": "2026-03-23T05:35:34.170Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 4,
+  "fields": {
+    "symbol": "SBIN.NS",
+    "name": "State Bank of India",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1017.40",
+    "currency": "INR",
+    "pe_ratio": "11.08",
+    "discount_ratio": "15.77",
+    "last_updated": "2026-03-23T05:36:06.118Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 5,
+  "fields": {
+    "symbol": "INFY.NS",
+    "name": "Infosys Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "1250.00",
+    "currency": "INR",
+    "pe_ratio": "17.40",
+    "discount_ratio": "26.46",
+    "last_updated": "2026-03-23T05:35:40.316Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 6,
+  "fields": {
+    "symbol": "TCS.NS",
+    "name": "Tata Consultancy Services Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "2396.00",
+    "currency": "INR",
+    "pe_ratio": "18.16",
+    "discount_ratio": "29.50",
+    "last_updated": "2026-03-23T05:36:09.189Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 7,
+  "fields": {
+    "symbol": "AAPL",
+    "name": "Apple Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "247.99",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": "16.06",
+    "last_updated": "2026-03-23T06:45:00.538Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 8,
+  "fields": {
+    "symbol": "MSFT",
+    "name": "Microsoft",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "381.87",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": "35.78",
+    "last_updated": "2026-03-23T06:45:00.553Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 9,
+  "fields": {
+    "symbol": "AMZN",
+    "name": "Amazon",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "205.37",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": "26.78",
+    "last_updated": "2026-03-23T06:45:00.565Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 10,
+  "fields": {
+    "symbol": "NVDA",
+    "name": "Nvidia",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "172.70",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": "35.66",
+    "last_updated": "2026-03-23T06:45:00.524Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 11,
+  "fields": {
+    "symbol": "360ONE.NS",
+    "name": "360 One Wam Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "999.50",
+    "currency": "INR",
+    "pe_ratio": "35.06",
+    "discount_ratio": "28.44",
+    "last_updated": "2026-03-23T05:35:04.690Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 12,
+  "fields": {
+    "symbol": "ABB.NS",
+    "name": "ABB India Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "5983.50",
+    "currency": "INR",
+    "pe_ratio": "76.02",
+    "discount_ratio": "0.70",
+    "last_updated": "2026-03-23T05:35:05.089Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 13,
+  "fields": {
+    "symbol": "ACC.NS",
+    "name": "ACC Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "1342.80",
+    "currency": "INR",
+    "pe_ratio": "9.54",
+    "discount_ratio": "32.75",
+    "last_updated": "2026-03-23T05:35:05.385Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 14,
+  "fields": {
+    "symbol": "APLAPOLLO.NS",
+    "name": "APL Apollo Tubes Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "1915.80",
+    "currency": "INR",
+    "pe_ratio": "46.68",
+    "discount_ratio": "15.97",
+    "last_updated": "2026-03-23T05:35:05.693Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 15,
+  "fields": {
+    "symbol": "AUBANK.NS",
+    "name": "AU Small Finance Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "862.85",
+    "currency": "INR",
+    "pe_ratio": "27.99",
+    "discount_ratio": "17.05",
+    "last_updated": "2026-03-23T05:35:05.999Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 16,
+  "fields": {
+    "symbol": "ADANIENSOL.NS",
+    "name": "Adani Energy Solutions Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "944.40",
+    "currency": "INR",
+    "pe_ratio": "50.79",
+    "discount_ratio": "16.35",
+    "last_updated": "2026-03-23T05:35:06.334Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 17,
+  "fields": {
+    "symbol": "ADANIENT.NS",
+    "name": "Adani Enterprises Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "1839.50",
+    "currency": "INR",
+    "pe_ratio": "16.63",
+    "discount_ratio": "35.91",
+    "last_updated": "2026-03-23T05:35:06.614Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 18,
+  "fields": {
+    "symbol": "ADANIGREEN.NS",
+    "name": "Adani Green Energy Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "818.20",
+    "currency": "INR",
+    "pe_ratio": "95.81",
+    "discount_ratio": "32.96",
+    "last_updated": "2026-03-23T05:35:07.023Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 19,
+  "fields": {
+    "symbol": "ADANIPORTS.NS",
+    "name": "Adani Ports and Special Economic Zone Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "1297.40",
+    "currency": "INR",
+    "pe_ratio": "22.46",
+    "discount_ratio": "29.53",
+    "last_updated": "2026-03-23T05:35:07.330Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 20,
+  "fields": {
+    "symbol": "ADANIPOWER.NS",
+    "name": "Adani Power Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "145.95",
+    "currency": "INR",
+    "pe_ratio": "24.91",
+    "discount_ratio": "19.88",
+    "last_updated": "2026-03-23T05:35:07.638Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 21,
+  "fields": {
+    "symbol": "ATGL.NS",
+    "name": "Adani Total Gas Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "521.50",
+    "currency": "INR",
+    "pe_ratio": "89.15",
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T05:35:08.251Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 22,
+  "fields": {
+    "symbol": "ABCAPITAL.NS",
+    "name": "Aditya Birla Capital Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "295.70",
+    "currency": "INR",
+    "pe_ratio": "22.30",
+    "discount_ratio": "27.24",
+    "last_updated": "2026-03-23T05:35:08.764Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 23,
+  "fields": {
+    "symbol": "ALKEM.NS",
+    "name": "Alkem Laboratories Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "5118.00",
+    "currency": "INR",
+    "pe_ratio": "25.82",
+    "discount_ratio": "13.42",
+    "last_updated": "2026-03-23T05:35:09.174Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 24,
+  "fields": {
+    "symbol": "AMBUJACEM.NS",
+    "name": "Ambuja Cements Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "404.20",
+    "currency": "INR",
+    "pe_ratio": "27.00",
+    "discount_ratio": "33.63",
+    "last_updated": "2026-03-23T05:35:09.584Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 25,
+  "fields": {
+    "symbol": "APOLLOHOSP.NS",
+    "name": "Apollo Hospitals Enterprise Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "7094.00",
+    "currency": "INR",
+    "pe_ratio": "56.66",
+    "discount_ratio": "19.38",
+    "last_updated": "2026-03-23T05:35:09.890Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 26,
+  "fields": {
+    "symbol": "ASHOKLEY.NS",
+    "name": "Ashok Leyland Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "162.56",
+    "currency": "INR",
+    "pe_ratio": "28.93",
+    "discount_ratio": "21.21",
+    "last_updated": "2026-03-23T05:35:10.208Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 27,
+  "fields": {
+    "symbol": "ASIANPAINT.NS",
+    "name": "Asian Paints Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "2139.00",
+    "currency": "INR",
+    "pe_ratio": "53.26",
+    "discount_ratio": "21.69",
+    "last_updated": "2026-03-23T05:35:10.607Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 28,
+  "fields": {
+    "symbol": "ASTRAL.NS",
+    "name": "Astral Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "1550.40",
+    "currency": "INR",
+    "pe_ratio": "82.60",
+    "discount_ratio": "9.24",
+    "last_updated": "2026-03-23T05:35:11.016Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 29,
+  "fields": {
+    "symbol": "AUROPHARMA.NS",
+    "name": "Aurobindo Pharma Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "1275.40",
+    "currency": "INR",
+    "pe_ratio": "21.24",
+    "discount_ratio": "4.68",
+    "last_updated": "2026-03-23T05:35:11.427Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 30,
+  "fields": {
+    "symbol": "DMART.NS",
+    "name": "Avenue Supermarts Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "3679.30",
+    "currency": "INR",
+    "pe_ratio": "84.12",
+    "discount_ratio": "11.16",
+    "last_updated": "2026-03-23T05:35:11.735Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 31,
+  "fields": {
+    "symbol": "AXISBANK.NS",
+    "name": "Axis Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1174.40",
+    "currency": "INR",
+    "pe_ratio": "13.94",
+    "discount_ratio": "21.56",
+    "last_updated": "2026-03-23T05:35:12.041Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 32,
+  "fields": {
+    "symbol": "BSE.NS",
+    "name": "BSE Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "2698.70",
+    "currency": "INR",
+    "pe_ratio": "50.88",
+    "discount_ratio": "13.35",
+    "last_updated": "2026-03-23T05:35:12.355Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 33,
+  "fields": {
+    "symbol": "BAJAJ-AUTO.NS",
+    "name": "Bajaj Auto Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "8810.50",
+    "currency": "INR",
+    "pe_ratio": "27.73",
+    "discount_ratio": "12.83",
+    "last_updated": "2026-03-23T05:35:12.659Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 34,
+  "fields": {
+    "symbol": "BAJFINANCE.NS",
+    "name": "Bajaj Finance Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "791.15",
+    "currency": "INR",
+    "pe_ratio": "27.29",
+    "discount_ratio": "26.53",
+    "last_updated": "2026-03-23T05:35:12.962Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 35,
+  "fields": {
+    "symbol": "BAJAJFINSV.NS",
+    "name": "Bajaj Finserv Ltd.",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1676.60",
+    "currency": "INR",
+    "pe_ratio": "28.01",
+    "discount_ratio": "24.70",
+    "last_updated": "2026-03-23T05:35:13.474Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 36,
+  "fields": {
+    "symbol": "BAJAJHLDNG.NS",
+    "name": "Bajaj Holdings & Investment Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "9211.00",
+    "currency": "INR",
+    "pe_ratio": "11.67",
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T05:35:13.987Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 37,
+  "fields": {
+    "symbol": "BAJAJHFL.NS",
+    "name": "Bajaj Housing Finance Ltd.",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "78.44",
+    "currency": "INR",
+    "pe_ratio": "26.41",
+    "discount_ratio": "21.69",
+    "last_updated": "2026-03-23T05:35:14.396Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 38,
+  "fields": {
+    "symbol": "BANKBARODA.NS",
+    "name": "Bank of Baroda Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "267.55",
+    "currency": "INR",
+    "pe_ratio": "7.11",
+    "discount_ratio": "19.57",
+    "last_updated": "2026-03-23T05:35:14.705Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 39,
+  "fields": {
+    "symbol": "BANKINDIA.NS",
+    "name": "Bank of India Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "143.43",
+    "currency": "INR",
+    "pe_ratio": "6.65",
+    "discount_ratio": "16.90",
+    "last_updated": "2026-03-23T05:35:15.010Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 40,
+  "fields": {
+    "symbol": "BDL.NS",
+    "name": "Bharat Dynamics Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "1176.20",
+    "currency": "INR",
+    "pe_ratio": "74.11",
+    "discount_ratio": "24.72",
+    "last_updated": "2026-03-23T05:35:15.420Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 41,
+  "fields": {
+    "symbol": "BEL.NS",
+    "name": "Bharat Electronics Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "408.50",
+    "currency": "INR",
+    "pe_ratio": "49.94",
+    "discount_ratio": "15.87",
+    "last_updated": "2026-03-23T05:35:15.727Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 42,
+  "fields": {
+    "symbol": "BHARATFORG.NS",
+    "name": "Bharat Forge Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "1643.30",
+    "currency": "INR",
+    "pe_ratio": "69.57",
+    "discount_ratio": "2.26",
+    "last_updated": "2026-03-23T05:35:16.036Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 43,
+  "fields": {
+    "symbol": "BHEL.NS",
+    "name": "Bharat Heavy Electricals Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "251.45",
+    "currency": "INR",
+    "pe_ratio": "107.92",
+    "discount_ratio": "3.16",
+    "last_updated": "2026-03-23T05:35:16.344Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 44,
+  "fields": {
+    "symbol": "BPCL.NS",
+    "name": "Bharat Petroleum Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "271.20",
+    "currency": "INR",
+    "pe_ratio": "4.71",
+    "discount_ratio": "34.13",
+    "last_updated": "2026-03-23T05:35:16.750Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 45,
+  "fields": {
+    "symbol": "BHARTIARTL.NS",
+    "name": "Bharti Airtel Limited",
+    "exchange": "NSE",
+    "sector": "Communication Services",
+    "current_price": "1802.40",
+    "currency": "INR",
+    "pe_ratio": "35.63",
+    "discount_ratio": "23.21",
+    "last_updated": "2026-03-23T05:35:17.161Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 46,
+  "fields": {
+    "symbol": "BHARTIHEXA.NS",
+    "name": "Bharti Hexacom Ltd.",
+    "exchange": "NSE",
+    "sector": "Communication Services",
+    "current_price": "1539.90",
+    "currency": "INR",
+    "pe_ratio": "43.78",
+    "discount_ratio": "18.00",
+    "last_updated": "2026-03-23T05:35:17.469Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 47,
+  "fields": {
+    "symbol": "BIOCON.NS",
+    "name": "Biocon Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "370.15",
+    "currency": "INR",
+    "pe_ratio": "75.85",
+    "discount_ratio": "12.72",
+    "last_updated": "2026-03-23T05:35:17.777Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 48,
+  "fields": {
+    "symbol": "BLUESTARCO.NS",
+    "name": "Blue Star Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "1614.00",
+    "currency": "INR",
+    "pe_ratio": "67.00",
+    "discount_ratio": "14.71",
+    "last_updated": "2026-03-23T05:35:18.082Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 49,
+  "fields": {
+    "symbol": "BOSCHLTD.NS",
+    "name": "Bosch Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "29590.00",
+    "currency": "INR",
+    "pe_ratio": "31.61",
+    "discount_ratio": "16.89",
+    "last_updated": "2026-03-23T05:35:18.492Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 50,
+  "fields": {
+    "symbol": "BRITANNIA.NS",
+    "name": "Britannia Industries Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "5531.00",
+    "currency": "INR",
+    "pe_ratio": "55.30",
+    "discount_ratio": "18.25",
+    "last_updated": "2026-03-23T05:35:18.901Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 51,
+  "fields": {
+    "symbol": "CGPOWER.NS",
+    "name": "CG Power and Industrial Solutions Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "644.55",
+    "currency": "INR",
+    "pe_ratio": "90.02",
+    "discount_ratio": "6.92",
+    "last_updated": "2026-03-23T05:35:19.213Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 52,
+  "fields": {
+    "symbol": "CANBK.NS",
+    "name": "Canara Bank",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "129.32",
+    "currency": "INR",
+    "pe_ratio": "5.81",
+    "discount_ratio": "19.99",
+    "last_updated": "2026-03-23T05:35:19.516Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 53,
+  "fields": {
+    "symbol": "CHOLAFIN.NS",
+    "name": "Cholamandalam Investment and Finance Company Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1382.70",
+    "currency": "INR",
+    "pe_ratio": "24.06",
+    "discount_ratio": "23.67",
+    "last_updated": "2026-03-23T05:35:19.822Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 54,
+  "fields": {
+    "symbol": "CIPLA.NS",
+    "name": "Cipla Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "1242.90",
+    "currency": "INR",
+    "pe_ratio": "22.08",
+    "discount_ratio": "14.06",
+    "last_updated": "2026-03-23T05:35:20.131Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 55,
+  "fields": {
+    "symbol": "COALINDIA.NS",
+    "name": "Coal India Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "453.20",
+    "currency": "INR",
+    "pe_ratio": "9.35",
+    "discount_ratio": "-6.54",
+    "last_updated": "2026-03-23T05:35:20.437Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 56,
+  "fields": {
+    "symbol": "COCHINSHIP.NS",
+    "name": "Cochin Shipyard Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "1275.00",
+    "currency": "INR",
+    "pe_ratio": "46.15",
+    "discount_ratio": "-10.82",
+    "last_updated": "2026-03-23T05:35:20.744Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 57,
+  "fields": {
+    "symbol": "COFORGE.NS",
+    "name": "Coforge Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "1084.90",
+    "currency": "INR",
+    "pe_ratio": "32.44",
+    "discount_ratio": "42.03",
+    "last_updated": "2026-03-23T05:35:21.063Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 58,
+  "fields": {
+    "symbol": "COLPAL.NS",
+    "name": "Colgate-Palmolive (India) Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "1847.00",
+    "currency": "INR",
+    "pe_ratio": "37.90",
+    "discount_ratio": "17.92",
+    "last_updated": "2026-03-23T05:35:21.358Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 59,
+  "fields": {
+    "symbol": "CONCOR.NS",
+    "name": "Container Corporation of India Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "424.80",
+    "currency": "INR",
+    "pe_ratio": "25.33",
+    "discount_ratio": "24.93",
+    "last_updated": "2026-03-23T05:35:21.668Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 60,
+  "fields": {
+    "symbol": "COROMANDEL.NS",
+    "name": "Coromandel International Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "1850.50",
+    "currency": "INR",
+    "pe_ratio": "22.78",
+    "discount_ratio": "29.29",
+    "last_updated": "2026-03-23T05:35:22.075Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 61,
+  "fields": {
+    "symbol": "CUMMINSIND.NS",
+    "name": "Cummins India Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "4406.30",
+    "currency": "INR",
+    "pe_ratio": "54.55",
+    "discount_ratio": "5.43",
+    "last_updated": "2026-03-23T05:35:22.383Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 62,
+  "fields": {
+    "symbol": "DLF.NS",
+    "name": "DLF Limited",
+    "exchange": "NSE",
+    "sector": "Real Estate",
+    "current_price": "513.70",
+    "currency": "INR",
+    "pe_ratio": "28.70",
+    "discount_ratio": "40.37",
+    "last_updated": "2026-03-23T05:35:22.691Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 63,
+  "fields": {
+    "symbol": "DABUR.NS",
+    "name": "Dabur India Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "422.40",
+    "currency": "INR",
+    "pe_ratio": "40.69",
+    "discount_ratio": "23.02",
+    "last_updated": "2026-03-23T05:35:22.998Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 64,
+  "fields": {
+    "symbol": "DIVISLAB.NS",
+    "name": "Divi's Laboratories Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "5989.00",
+    "currency": "INR",
+    "pe_ratio": "64.17",
+    "discount_ratio": "12.89",
+    "last_updated": "2026-03-23T05:35:23.314Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 65,
+  "fields": {
+    "symbol": "DIXON.NS",
+    "name": "Dixon Technologies (India) Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "9845.00",
+    "currency": "INR",
+    "pe_ratio": "35.92",
+    "discount_ratio": "23.55",
+    "last_updated": "2026-03-23T05:35:23.612Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 66,
+  "fields": {
+    "symbol": "DRREDDY.NS",
+    "name": "Dr. Reddy's Laboratories Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "1278.20",
+    "currency": "INR",
+    "pe_ratio": "18.82",
+    "discount_ratio": "2.62",
+    "last_updated": "2026-03-23T05:35:23.922Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 67,
+  "fields": {
+    "symbol": "EICHERMOT.NS",
+    "name": "Eicher Motors Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "6732.50",
+    "currency": "INR",
+    "pe_ratio": "34.56",
+    "discount_ratio": "14.66",
+    "last_updated": "2026-03-23T05:35:24.329Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 68,
+  "fields": {
+    "symbol": "ETERNAL.NS",
+    "name": "Eternal Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "227.91",
+    "currency": "INR",
+    "pe_ratio": "990.91",
+    "discount_ratio": "38.44",
+    "last_updated": "2026-03-23T05:35:24.738Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 69,
+  "fields": {
+    "symbol": "EXIDEIND.NS",
+    "name": "Exide Industries Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "295.35",
+    "currency": "INR",
+    "pe_ratio": "30.39",
+    "discount_ratio": "23.01",
+    "last_updated": "2026-03-23T05:35:25.048Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 70,
+  "fields": {
+    "symbol": "NYKAA.NS",
+    "name": "FSN E-Commerce Ventures Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "233.25",
+    "currency": "INR",
+    "pe_ratio": "485.94",
+    "discount_ratio": "14.12",
+    "last_updated": "2026-03-23T05:35:25.573Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 71,
+  "fields": {
+    "symbol": "FEDERALBNK.NS",
+    "name": "The Federal Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "257.05",
+    "currency": "INR",
+    "pe_ratio": "15.57",
+    "discount_ratio": "12.80",
+    "last_updated": "2026-03-23T05:35:25.879Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 72,
+  "fields": {
+    "symbol": "FORTIS.NS",
+    "name": "Fortis Healthcare Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "783.00",
+    "currency": "INR",
+    "pe_ratio": "61.46",
+    "discount_ratio": "27.46",
+    "last_updated": "2026-03-23T05:35:26.172Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 73,
+  "fields": {
+    "symbol": "GAIL.NS",
+    "name": "GAIL (India) Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "135.98",
+    "currency": "INR",
+    "pe_ratio": "10.43",
+    "discount_ratio": "30.34",
+    "last_updated": "2026-03-23T05:35:26.593Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 74,
+  "fields": {
+    "symbol": "GMRAIRPORT.NS",
+    "name": "GMR Airports Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "85.92",
+    "currency": "INR",
+    "pe_ratio": "153.32",
+    "discount_ratio": "24.52",
+    "last_updated": "2026-03-23T05:35:26.889Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 75,
+  "fields": {
+    "symbol": "GLENMARK.NS",
+    "name": "Glenmark Pharmaceuticals Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "2109.60",
+    "currency": "INR",
+    "pe_ratio": "55.93",
+    "discount_ratio": "5.02",
+    "last_updated": "2026-03-23T05:35:27.196Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 76,
+  "fields": {
+    "symbol": "GODFRYPHLP.NS",
+    "name": "Godfrey Phillips India Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "1912.30",
+    "currency": "INR",
+    "pe_ratio": "22.97",
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T05:35:27.717Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 77,
+  "fields": {
+    "symbol": "GODREJCP.NS",
+    "name": "Godrej Consumer Products Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "996.50",
+    "currency": "INR",
+    "pe_ratio": "55.95",
+    "discount_ratio": "27.47",
+    "last_updated": "2026-03-23T05:35:28.025Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 78,
+  "fields": {
+    "symbol": "GODREJPROP.NS",
+    "name": "Godrej Properties Limited",
+    "exchange": "NSE",
+    "sector": "Real Estate",
+    "current_price": "1493.00",
+    "currency": "INR",
+    "pe_ratio": "28.44",
+    "discount_ratio": "34.16",
+    "last_updated": "2026-03-23T05:35:28.331Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 79,
+  "fields": {
+    "symbol": "GRASIM.NS",
+    "name": "Grasim Industries Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "2541.50",
+    "currency": "INR",
+    "pe_ratio": "38.09",
+    "discount_ratio": "26.02",
+    "last_updated": "2026-03-23T05:35:28.739Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 80,
+  "fields": {
+    "symbol": "HCLTECH.NS",
+    "name": "HCL Technologies Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "1349.50",
+    "currency": "INR",
+    "pe_ratio": "22.24",
+    "discount_ratio": "19.69",
+    "last_updated": "2026-03-23T05:35:29.048Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 81,
+  "fields": {
+    "symbol": "HDFCAMC.NS",
+    "name": "HDFC Asset Management Company Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "2289.40",
+    "currency": "INR",
+    "pe_ratio": "34.27",
+    "discount_ratio": "25.12",
+    "last_updated": "2026-03-23T05:35:29.355Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 82,
+  "fields": {
+    "symbol": "HDFCLIFE.NS",
+    "name": "HDFC Life Insurance Company Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "599.40",
+    "currency": "INR",
+    "pe_ratio": "68.66",
+    "discount_ratio": "32.43",
+    "last_updated": "2026-03-23T05:35:30.078Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 83,
+  "fields": {
+    "symbol": "HAVELLS.NS",
+    "name": "Havells India Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "1231.90",
+    "currency": "INR",
+    "pe_ratio": "51.98",
+    "discount_ratio": "24.66",
+    "last_updated": "2026-03-23T05:35:30.480Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 84,
+  "fields": {
+    "symbol": "HEROMOTOCO.NS",
+    "name": "Hero MotoCorp Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "5076.00",
+    "currency": "INR",
+    "pe_ratio": "18.68",
+    "discount_ratio": "17.04",
+    "last_updated": "2026-03-23T05:35:30.900Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 85,
+  "fields": {
+    "symbol": "HINDALCO.NS",
+    "name": "Hindalco Industries Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "844.75",
+    "currency": "INR",
+    "pe_ratio": "11.68",
+    "discount_ratio": "10.61",
+    "last_updated": "2026-03-23T05:35:31.205Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 86,
+  "fields": {
+    "symbol": "HAL.NS",
+    "name": "Hindustan Aeronautics Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "3631.20",
+    "currency": "INR",
+    "pe_ratio": "27.27",
+    "discount_ratio": "29.89",
+    "last_updated": "2026-03-23T05:35:31.609Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 87,
+  "fields": {
+    "symbol": "HINDPETRO.NS",
+    "name": "Hindustan Petroleum Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "317.60",
+    "currency": "INR",
+    "pe_ratio": "4.39",
+    "discount_ratio": "35.89",
+    "last_updated": "2026-03-23T05:35:31.918Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 88,
+  "fields": {
+    "symbol": "HINDUNILVR.NS",
+    "name": "Hindustan Unilever Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "2043.50",
+    "currency": "INR",
+    "pe_ratio": "47.40",
+    "discount_ratio": "23.50",
+    "last_updated": "2026-03-23T05:35:32.325Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 89,
+  "fields": {
+    "symbol": "HINDZINC.NS",
+    "name": "Hindustan Zinc Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "491.30",
+    "currency": "INR",
+    "pe_ratio": "17.58",
+    "discount_ratio": "23.71",
+    "last_updated": "2026-03-23T05:35:32.736Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 90,
+  "fields": {
+    "symbol": "POWERINDIA.NS",
+    "name": "Hitachi Energy India Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "24075.00",
+    "currency": "INR",
+    "pe_ratio": "126.58",
+    "discount_ratio": "-0.85",
+    "last_updated": "2026-03-23T05:35:33.041Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 91,
+  "fields": {
+    "symbol": "HUDCO.NS",
+    "name": "Housing and Urban Development Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "165.41",
+    "currency": "INR",
+    "pe_ratio": "11.92",
+    "discount_ratio": "44.86",
+    "last_updated": "2026-03-23T05:35:33.554Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 92,
+  "fields": {
+    "symbol": "HYUNDAI.NS",
+    "name": "Hyundai Motor India Ltd.",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "1909.50",
+    "currency": "INR",
+    "pe_ratio": "26.82",
+    "discount_ratio": "23.68",
+    "last_updated": "2026-03-23T05:35:33.859Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 93,
+  "fields": {
+    "symbol": "ICICIGI.NS",
+    "name": "ICICI Lombard General Insurance Company Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1708.90",
+    "currency": "INR",
+    "pe_ratio": "31.32",
+    "discount_ratio": "20.62",
+    "last_updated": "2026-03-23T05:35:34.595Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 94,
+  "fields": {
+    "symbol": "IDFCFIRSTB.NS",
+    "name": "IDFC First Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "60.28",
+    "currency": "INR",
+    "pe_ratio": "31.73",
+    "discount_ratio": "27.62",
+    "last_updated": "2026-03-23T05:35:34.887Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 95,
+  "fields": {
+    "symbol": "IRB.NS",
+    "name": "IRB Infrastructure Developers Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "40.73",
+    "currency": "INR",
+    "pe_ratio": "32.07",
+    "discount_ratio": "29.29",
+    "last_updated": "2026-03-23T05:35:35.192Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 96,
+  "fields": {
+    "symbol": "ITCHOTELS.NS",
+    "name": "ITC Hotels Ltd.",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "142.57",
+    "currency": "INR",
+    "pe_ratio": "39.17",
+    "discount_ratio": "39.23",
+    "last_updated": "2026-03-23T05:35:35.704Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 97,
+  "fields": {
+    "symbol": "ITC.NS",
+    "name": "ITC Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "292.85",
+    "currency": "INR",
+    "pe_ratio": "18.01",
+    "discount_ratio": "20.38",
+    "last_updated": "2026-03-23T05:35:36.115Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 98,
+  "fields": {
+    "symbol": "INDIANB.NS",
+    "name": "Indian Bank",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "841.70",
+    "currency": "INR",
+    "pe_ratio": "9.85",
+    "discount_ratio": "16.30",
+    "last_updated": "2026-03-23T05:35:36.522Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 99,
+  "fields": {
+    "symbol": "INDHOTEL.NS",
+    "name": "The Indian Hotels Company Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "587.35",
+    "currency": "INR",
+    "pe_ratio": "41.66",
+    "discount_ratio": "28.56",
+    "last_updated": "2026-03-23T05:35:37.038Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 100,
+  "fields": {
+    "symbol": "IOC.NS",
+    "name": "Indian Oil Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "138.62",
+    "currency": "INR",
+    "pe_ratio": "5.34",
+    "discount_ratio": "23.96",
+    "last_updated": "2026-03-23T05:35:37.342Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 101,
+  "fields": {
+    "symbol": "IRCTC.NS",
+    "name": "Indian Railway Catering & Tourism Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "507.70",
+    "currency": "INR",
+    "pe_ratio": "28.47",
+    "discount_ratio": "33.94",
+    "last_updated": "2026-03-23T05:35:37.653Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 102,
+  "fields": {
+    "symbol": "IRFC.NS",
+    "name": "Indian Railway Finance Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "90.34",
+    "currency": "INR",
+    "pe_ratio": "16.85",
+    "discount_ratio": "-41.16",
+    "last_updated": "2026-03-23T05:35:37.957Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 103,
+  "fields": {
+    "symbol": "IREDA.NS",
+    "name": "Indian Renewable Energy Development Agency Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "111.19",
+    "currency": "INR",
+    "pe_ratio": "16.26",
+    "discount_ratio": "25.87",
+    "last_updated": "2026-03-23T05:35:38.265Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 104,
+  "fields": {
+    "symbol": "IGL.NS",
+    "name": "Indraprastha Gas Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "149.44",
+    "currency": "INR",
+    "pe_ratio": "12.59",
+    "discount_ratio": "28.96",
+    "last_updated": "2026-03-23T05:35:38.672Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 105,
+  "fields": {
+    "symbol": "INDUSTOWER.NS",
+    "name": "Indus Towers Limited",
+    "exchange": "NSE",
+    "sector": "Communication Services",
+    "current_price": "418.30",
+    "currency": "INR",
+    "pe_ratio": "15.45",
+    "discount_ratio": "9.70",
+    "last_updated": "2026-03-23T05:35:39.082Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 106,
+  "fields": {
+    "symbol": "INDUSINDBK.NS",
+    "name": "IndusInd Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "787.45",
+    "currency": "INR",
+    "pe_ratio": "15.62",
+    "discount_ratio": "7.63",
+    "last_updated": "2026-03-23T05:35:39.596Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 107,
+  "fields": {
+    "symbol": "NAUKRI.NS",
+    "name": "Info Edge (India) Limited",
+    "exchange": "NSE",
+    "sector": "Communication Services",
+    "current_price": "967.70",
+    "currency": "INR",
+    "pe_ratio": "46.66",
+    "discount_ratio": "32.58",
+    "last_updated": "2026-03-23T05:35:40.007Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 108,
+  "fields": {
+    "symbol": "INDIGO.NS",
+    "name": "InterGlobe Aviation Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "3912.90",
+    "currency": "INR",
+    "pe_ratio": "47.15",
+    "discount_ratio": "30.68",
+    "last_updated": "2026-03-23T05:35:40.619Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 109,
+  "fields": {
+    "symbol": "JSWENERGY.NS",
+    "name": "JSW Energy Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "487.20",
+    "currency": "INR",
+    "pe_ratio": "37.39",
+    "discount_ratio": "14.46",
+    "last_updated": "2026-03-23T05:35:40.927Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 110,
+  "fields": {
+    "symbol": "JSWSTEEL.NS",
+    "name": "JSW Steel Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "1113.50",
+    "currency": "INR",
+    "pe_ratio": "36.62",
+    "discount_ratio": "10.82",
+    "last_updated": "2026-03-23T05:35:41.236Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 111,
+  "fields": {
+    "symbol": "JINDALSTEL.NS",
+    "name": "Jindal Steel Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "1112.80",
+    "currency": "INR",
+    "pe_ratio": "57.18",
+    "discount_ratio": "6.20",
+    "last_updated": "2026-03-23T05:35:41.651Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 112,
+  "fields": {
+    "symbol": "JIOFIN.NS",
+    "name": "Jio Financial Services Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "227.95",
+    "currency": "INR",
+    "pe_ratio": "89.74",
+    "discount_ratio": "27.06",
+    "last_updated": "2026-03-23T05:35:42.053Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 113,
+  "fields": {
+    "symbol": "JUBLFOOD.NS",
+    "name": "Jubilant FoodWorks Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "441.20",
+    "currency": "INR",
+    "pe_ratio": "91.35",
+    "discount_ratio": "30.89",
+    "last_updated": "2026-03-23T05:35:42.368Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 114,
+  "fields": {
+    "symbol": "KEI.NS",
+    "name": "KEI Industries Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "3951.00",
+    "currency": "INR",
+    "pe_ratio": "43.88",
+    "discount_ratio": "17.73",
+    "last_updated": "2026-03-23T05:35:42.672Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 115,
+  "fields": {
+    "symbol": "KPITTECH.NS",
+    "name": "KPIT Technologies Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "655.30",
+    "currency": "INR",
+    "pe_ratio": "24.97",
+    "discount_ratio": "45.44",
+    "last_updated": "2026-03-23T05:35:43.187Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 116,
+  "fields": {
+    "symbol": "KALYANKJIL.NS",
+    "name": "Kalyan Jewellers India Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "364.10",
+    "currency": "INR",
+    "pe_ratio": "33.25",
+    "discount_ratio": "43.86",
+    "last_updated": "2026-03-23T05:35:43.598Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 117,
+  "fields": {
+    "symbol": "KOTAKBANK.NS",
+    "name": "Kotak Mahindra Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "357.55",
+    "currency": "INR",
+    "pe_ratio": "18.93",
+    "discount_ratio": "26.75",
+    "last_updated": "2026-03-23T05:35:43.897Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 118,
+  "fields": {
+    "symbol": "LTF.NS",
+    "name": "L&T Finance Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "246.80",
+    "currency": "INR",
+    "pe_ratio": "22.02",
+    "discount_ratio": "21.08",
+    "last_updated": "2026-03-23T05:35:44.309Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 119,
+  "fields": {
+    "symbol": "LICHSGFIN.NS",
+    "name": "LIC Housing Finance Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "464.15",
+    "currency": "INR",
+    "pe_ratio": "4.65",
+    "discount_ratio": "22.14",
+    "last_updated": "2026-03-23T05:35:44.614Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 120,
+  "fields": {
+    "symbol": "LTM.NS",
+    "name": "LTM Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "4117.00",
+    "currency": "INR",
+    "pe_ratio": "25.68",
+    "discount_ratio": "30.83",
+    "last_updated": "2026-03-23T05:35:44.919Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 121,
+  "fields": {
+    "symbol": "LT.NS",
+    "name": "Larsen & Toubro Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "3310.20",
+    "currency": "INR",
+    "pe_ratio": "25.91",
+    "discount_ratio": "27.15",
+    "last_updated": "2026-03-23T05:35:45.229Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 122,
+  "fields": {
+    "symbol": "LICI.NS",
+    "name": "Life Insurance Corporation of India",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "748.65",
+    "currency": "INR",
+    "pe_ratio": "8.93",
+    "discount_ratio": "31.10",
+    "last_updated": "2026-03-23T05:35:45.536Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 123,
+  "fields": {
+    "symbol": "LODHA.NS",
+    "name": "Lodha Developers Limited",
+    "exchange": "NSE",
+    "sector": "Real Estate",
+    "current_price": "747.10",
+    "currency": "INR",
+    "pe_ratio": "22.32",
+    "discount_ratio": "43.89",
+    "last_updated": "2026-03-23T05:35:46.170Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 124,
+  "fields": {
+    "symbol": "LUPIN.NS",
+    "name": "Lupin Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "2289.60",
+    "currency": "INR",
+    "pe_ratio": "22.56",
+    "discount_ratio": "5.74",
+    "last_updated": "2026-03-23T05:35:46.566Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 125,
+  "fields": {
+    "symbol": "MRF.NS",
+    "name": "MRF Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "124200.00",
+    "currency": "INR",
+    "pe_ratio": "23.64",
+    "discount_ratio": "17.48",
+    "last_updated": "2026-03-23T05:35:46.867Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 126,
+  "fields": {
+    "symbol": "M&MFIN.NS",
+    "name": "Mahindra & Mahindra Financial Services Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "297.25",
+    "currency": "INR",
+    "pe_ratio": "16.77",
+    "discount_ratio": "21.04",
+    "last_updated": "2026-03-23T05:35:47.173Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 127,
+  "fields": {
+    "symbol": "M&M.NS",
+    "name": "Mahindra & Mahindra Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "2968.40",
+    "currency": "INR",
+    "pe_ratio": "21.23",
+    "discount_ratio": "31.16",
+    "last_updated": "2026-03-23T05:35:47.480Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 128,
+  "fields": {
+    "symbol": "MANKIND.NS",
+    "name": "Mankind Pharma Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "1933.60",
+    "currency": "INR",
+    "pe_ratio": "44.75",
+    "discount_ratio": "22.87",
+    "last_updated": "2026-03-23T05:35:47.789Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 129,
+  "fields": {
+    "symbol": "MARICO.NS",
+    "name": "Marico Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "725.05",
+    "currency": "INR",
+    "pe_ratio": "54.72",
+    "discount_ratio": "15.35",
+    "last_updated": "2026-03-23T05:35:48.201Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 130,
+  "fields": {
+    "symbol": "MARUTI.NS",
+    "name": "Maruti Suzuki India Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "12374.00",
+    "currency": "INR",
+    "pe_ratio": "26.05",
+    "discount_ratio": "28.20",
+    "last_updated": "2026-03-23T05:35:48.607Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 131,
+  "fields": {
+    "symbol": "MFSL.NS",
+    "name": "Max Financial Services Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1569.80",
+    "currency": "INR",
+    "pe_ratio": "368.50",
+    "discount_ratio": "25.11",
+    "last_updated": "2026-03-23T05:35:48.921Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 132,
+  "fields": {
+    "symbol": "MAXHEALTH.NS",
+    "name": "Max Healthcare Institute Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "940.40",
+    "currency": "INR",
+    "pe_ratio": "64.54",
+    "discount_ratio": "22.18",
+    "last_updated": "2026-03-23T05:35:49.424Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 133,
+  "fields": {
+    "symbol": "MAZDOCK.NS",
+    "name": "Mazagon Dock Shipbuilders Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "2217.00",
+    "currency": "INR",
+    "pe_ratio": "37.12",
+    "discount_ratio": "19.91",
+    "last_updated": "2026-03-23T05:35:49.834Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 134,
+  "fields": {
+    "symbol": "MOTILALOFS.NS",
+    "name": "Motilal Oswal Financial Services Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "634.00",
+    "currency": "INR",
+    "pe_ratio": "19.29",
+    "discount_ratio": "40.12",
+    "last_updated": "2026-03-23T05:35:50.143Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 135,
+  "fields": {
+    "symbol": "MPHASIS.NS",
+    "name": "Mphasis Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "2080.70",
+    "currency": "INR",
+    "pe_ratio": "22.06",
+    "discount_ratio": "29.73",
+    "last_updated": "2026-03-23T05:35:50.451Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 136,
+  "fields": {
+    "symbol": "MUTHOOTFIN.NS",
+    "name": "Muthoot Finance Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "3099.20",
+    "currency": "INR",
+    "pe_ratio": "14.27",
+    "discount_ratio": "24.54",
+    "last_updated": "2026-03-23T05:35:50.757Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 137,
+  "fields": {
+    "symbol": "NHPC.NS",
+    "name": "NHPC Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "75.08",
+    "currency": "INR",
+    "pe_ratio": "48.13",
+    "discount_ratio": "16.18",
+    "last_updated": "2026-03-23T05:35:51.064Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 138,
+  "fields": {
+    "symbol": "NMDC.NS",
+    "name": "NMDC Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "74.72",
+    "currency": "INR",
+    "pe_ratio": "9.52",
+    "discount_ratio": "7.68",
+    "last_updated": "2026-03-23T05:35:51.474Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 139,
+  "fields": {
+    "symbol": "NTPCGREEN.NS",
+    "name": "NTPC Green Energy Ltd.",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "94.83",
+    "currency": "INR",
+    "pe_ratio": "137.43",
+    "discount_ratio": "9.86",
+    "last_updated": "2026-03-23T05:35:51.882Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 140,
+  "fields": {
+    "symbol": "NTPC.NS",
+    "name": "NTPC Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "371.85",
+    "currency": "INR",
+    "pe_ratio": "20.59",
+    "discount_ratio": "12.39",
+    "last_updated": "2026-03-23T05:35:52.191Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 141,
+  "fields": {
+    "symbol": "NATIONALUM.NS",
+    "name": "National Aluminium Company Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "350.75",
+    "currency": "INR",
+    "pe_ratio": "10.50",
+    "discount_ratio": "0.77",
+    "last_updated": "2026-03-23T05:35:52.600Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 142,
+  "fields": {
+    "symbol": "NESTLEIND.NS",
+    "name": "Nestlé India Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "1172.70",
+    "currency": "INR",
+    "pe_ratio": "69.19",
+    "discount_ratio": "14.88",
+    "last_updated": "2026-03-23T05:35:53.014Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 143,
+  "fields": {
+    "symbol": "OBEROIRLTY.NS",
+    "name": "Oberoi Realty Limited",
+    "exchange": "NSE",
+    "sector": "Real Estate",
+    "current_price": "1394.40",
+    "currency": "INR",
+    "pe_ratio": "22.64",
+    "discount_ratio": "20.51",
+    "last_updated": "2026-03-23T05:35:53.319Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 144,
+  "fields": {
+    "symbol": "ONGC.NS",
+    "name": "Oil and Natural Gas Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "266.20",
+    "currency": "INR",
+    "pe_ratio": "8.81",
+    "discount_ratio": "6.72",
+    "last_updated": "2026-03-23T05:35:53.726Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 145,
+  "fields": {
+    "symbol": "OIL.NS",
+    "name": "Oil India Limited",
+    "exchange": "NSE",
+    "sector": "Energy",
+    "current_price": "469.40",
+    "currency": "INR",
+    "pe_ratio": "13.09",
+    "discount_ratio": "4.89",
+    "last_updated": "2026-03-23T05:35:54.156Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 146,
+  "fields": {
+    "symbol": "PAYTM.NS",
+    "name": "One97 Communications Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "991.60",
+    "currency": "INR",
+    "pe_ratio": "48.38",
+    "discount_ratio": "28.58",
+    "last_updated": "2026-03-23T05:35:54.652Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 147,
+  "fields": {
+    "symbol": "OFSS.NS",
+    "name": "Oracle Financial Services Software Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "6493.50",
+    "currency": "INR",
+    "pe_ratio": "23.22",
+    "discount_ratio": "33.74",
+    "last_updated": "2026-03-23T05:35:54.964Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 148,
+  "fields": {
+    "symbol": "POLICYBZR.NS",
+    "name": "PB Fintech Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1449.70",
+    "currency": "INR",
+    "pe_ratio": "115.24",
+    "discount_ratio": "25.20",
+    "last_updated": "2026-03-23T05:35:55.261Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 149,
+  "fields": {
+    "symbol": "PIIND.NS",
+    "name": "PI Industries Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "2813.10",
+    "currency": "INR",
+    "pe_ratio": "29.39",
+    "discount_ratio": "17.26",
+    "last_updated": "2026-03-23T05:35:55.571Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 150,
+  "fields": {
+    "symbol": "PAGEIND.NS",
+    "name": "Page Industries Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "31415.00",
+    "currency": "INR",
+    "pe_ratio": "46.74",
+    "discount_ratio": "17.56",
+    "last_updated": "2026-03-23T05:35:56.082Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 151,
+  "fields": {
+    "symbol": "PATANJALI.NS",
+    "name": "Patanjali Foods Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "464.70",
+    "currency": "INR",
+    "pe_ratio": "30.69",
+    "discount_ratio": "28.09",
+    "last_updated": "2026-03-23T05:35:56.391Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 152,
+  "fields": {
+    "symbol": "PERSISTENT.NS",
+    "name": "Persistent Systems Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "4711.80",
+    "currency": "INR",
+    "pe_ratio": "42.51",
+    "discount_ratio": "25.68",
+    "last_updated": "2026-03-23T05:35:56.700Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 153,
+  "fields": {
+    "symbol": "PHOENIXLTD.NS",
+    "name": "The Phoenix Mills Limited",
+    "exchange": "NSE",
+    "sector": "Real Estate",
+    "current_price": "1473.00",
+    "currency": "INR",
+    "pe_ratio": "48.45",
+    "discount_ratio": "24.82",
+    "last_updated": "2026-03-23T05:35:57.004Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 154,
+  "fields": {
+    "symbol": "PIDILITIND.NS",
+    "name": "Pidilite Industries Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "1304.90",
+    "currency": "INR",
+    "pe_ratio": "57.92",
+    "discount_ratio": "20.29",
+    "last_updated": "2026-03-23T05:35:57.313Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 155,
+  "fields": {
+    "symbol": "POLYCAB.NS",
+    "name": "Polycab India Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "6783.00",
+    "currency": "INR",
+    "pe_ratio": "38.92",
+    "discount_ratio": "22.16",
+    "last_updated": "2026-03-23T05:35:57.747Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 156,
+  "fields": {
+    "symbol": "PFC.NS",
+    "name": "Power Finance Corporation Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "388.15",
+    "currency": "INR",
+    "pe_ratio": "5.08",
+    "discount_ratio": "21.65",
+    "last_updated": "2026-03-23T05:35:58.233Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 157,
+  "fields": {
+    "symbol": "POWERGRID.NS",
+    "name": "Power Grid Corporation of India Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "298.40",
+    "currency": "INR",
+    "pe_ratio": "19.14",
+    "discount_ratio": "6.10",
+    "last_updated": "2026-03-23T05:35:58.953Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 158,
+  "fields": {
+    "symbol": "PREMIERENE.NS",
+    "name": "Premier Energies Ltd.",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "860.55",
+    "currency": "INR",
+    "pe_ratio": "30.71",
+    "discount_ratio": "10.85",
+    "last_updated": "2026-03-23T05:35:59.257Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 159,
+  "fields": {
+    "symbol": "PRESTIGE.NS",
+    "name": "Prestige Estates Projects Limited",
+    "exchange": "NSE",
+    "sector": "Real Estate",
+    "current_price": "1182.40",
+    "currency": "INR",
+    "pe_ratio": "52.72",
+    "discount_ratio": "37.22",
+    "last_updated": "2026-03-23T05:35:59.769Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 160,
+  "fields": {
+    "symbol": "PNB.NS",
+    "name": "Punjab National Bank",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "106.10",
+    "currency": "INR",
+    "pe_ratio": "6.85",
+    "discount_ratio": "19.48",
+    "last_updated": "2026-03-23T05:36:00.088Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 161,
+  "fields": {
+    "symbol": "RECLTD.NS",
+    "name": "REC Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "311.00",
+    "currency": "INR",
+    "pe_ratio": "4.76",
+    "discount_ratio": "31.88",
+    "last_updated": "2026-03-23T05:36:00.603Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 162,
+  "fields": {
+    "symbol": "RVNL.NS",
+    "name": "Rail Vikas Nigam Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "251.65",
+    "currency": "INR",
+    "pe_ratio": "45.75",
+    "discount_ratio": "-4.71",
+    "last_updated": "2026-03-23T05:36:00.915Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 163,
+  "fields": {
+    "symbol": "SBICARD.NS",
+    "name": "SBI Cards and Payment Services Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "663.55",
+    "currency": "INR",
+    "pe_ratio": "30.20",
+    "discount_ratio": "20.43",
+    "last_updated": "2026-03-23T05:36:02.533Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 164,
+  "fields": {
+    "symbol": "SBILIFE.NS",
+    "name": "SBI Life Insurance Company Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "1826.30",
+    "currency": "INR",
+    "pe_ratio": "74.06",
+    "discount_ratio": "24.06",
+    "last_updated": "2026-03-23T05:36:02.839Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 165,
+  "fields": {
+    "symbol": "SRF.NS",
+    "name": "SRF Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "2396.20",
+    "currency": "INR",
+    "pe_ratio": "39.84",
+    "discount_ratio": "23.07",
+    "last_updated": "2026-03-23T05:36:03.150Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 166,
+  "fields": {
+    "symbol": "MOTHERSON.NS",
+    "name": "Samvardhana Motherson International Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "107.25",
+    "currency": "INR",
+    "pe_ratio": "33.10",
+    "discount_ratio": "23.77",
+    "last_updated": "2026-03-23T05:36:03.456Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 167,
+  "fields": {
+    "symbol": "SHREECEM.NS",
+    "name": "Shree Cement Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "22970.00",
+    "currency": "INR",
+    "pe_ratio": "46.26",
+    "discount_ratio": "19.69",
+    "last_updated": "2026-03-23T05:36:03.864Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 168,
+  "fields": {
+    "symbol": "SHRIRAMFIN.NS",
+    "name": "Shriram Finance Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "881.20",
+    "currency": "INR",
+    "pe_ratio": "18.12",
+    "discount_ratio": "25.12",
+    "last_updated": "2026-03-23T05:36:04.279Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 169,
+  "fields": {
+    "symbol": "ENRIN.NS",
+    "name": "Siemens Energy India Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "2682.30",
+    "currency": "INR",
+    "pe_ratio": "80.74",
+    "discount_ratio": "12.66",
+    "last_updated": "2026-03-23T05:36:04.682Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 170,
+  "fields": {
+    "symbol": "SIEMENS.NS",
+    "name": "Siemens Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "2965.30",
+    "currency": "INR",
+    "pe_ratio": "62.34",
+    "discount_ratio": "12.11",
+    "last_updated": "2026-03-23T05:36:04.991Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 171,
+  "fields": {
+    "symbol": "SOLARINDS.NS",
+    "name": "Solar Industries India Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "12329.00",
+    "currency": "INR",
+    "pe_ratio": "76.87",
+    "discount_ratio": "26.16",
+    "last_updated": "2026-03-23T05:36:05.402Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 172,
+  "fields": {
+    "symbol": "SONACOMS.NS",
+    "name": "Sona BLW Precision Forgings Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "487.25",
+    "currency": "INR",
+    "pe_ratio": "49.37",
+    "discount_ratio": "11.99",
+    "last_updated": "2026-03-23T05:36:05.810Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 173,
+  "fields": {
+    "symbol": "SAIL.NS",
+    "name": "Steel Authority of India Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "146.79",
+    "currency": "INR",
+    "pe_ratio": "21.75",
+    "discount_ratio": "-2.81",
+    "last_updated": "2026-03-23T05:36:06.634Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 174,
+  "fields": {
+    "symbol": "SUNPHARMA.NS",
+    "name": "Sun Pharmaceutical Industries Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "1762.40",
+    "currency": "INR",
+    "pe_ratio": "38.74",
+    "discount_ratio": "10.46",
+    "last_updated": "2026-03-23T05:36:07.061Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 175,
+  "fields": {
+    "symbol": "SUPREMEIND.NS",
+    "name": "The Supreme Industries Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "3684.40",
+    "currency": "INR",
+    "pe_ratio": "57.54",
+    "discount_ratio": "6.13",
+    "last_updated": "2026-03-23T05:36:07.464Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 176,
+  "fields": {
+    "symbol": "SUZLON.NS",
+    "name": "Suzlon Energy Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "40.12",
+    "currency": "INR",
+    "pe_ratio": "17.00",
+    "discount_ratio": "36.23",
+    "last_updated": "2026-03-23T05:36:07.858Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 177,
+  "fields": {
+    "symbol": "SWIGGY.NS",
+    "name": "Swiggy Ltd.",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "275.35",
+    "currency": "INR",
+    "pe_ratio": "-34.93",
+    "discount_ratio": "37.72",
+    "last_updated": "2026-03-23T05:36:08.166Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 178,
+  "fields": {
+    "symbol": "TVSMOTOR.NS",
+    "name": "TVS Motor Company Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "3395.70",
+    "currency": "INR",
+    "pe_ratio": "73.74",
+    "discount_ratio": "14.27",
+    "last_updated": "2026-03-23T05:36:08.473Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 179,
+  "fields": {
+    "symbol": "TATACOMM.NS",
+    "name": "Tata Communications Limited",
+    "exchange": "NSE",
+    "sector": "Communication Services",
+    "current_price": "1364.60",
+    "currency": "INR",
+    "pe_ratio": "25.21",
+    "discount_ratio": "31.35",
+    "last_updated": "2026-03-23T05:36:08.779Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 180,
+  "fields": {
+    "symbol": "TATACONSUM.NS",
+    "name": "Tata Consumer Products Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "1031.60",
+    "currency": "INR",
+    "pe_ratio": "69.66",
+    "discount_ratio": "21.61",
+    "last_updated": "2026-03-23T05:36:09.598Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 181,
+  "fields": {
+    "symbol": "TATAELXSI.NS",
+    "name": "Tata Elxsi Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "4124.40",
+    "currency": "INR",
+    "pe_ratio": "44.24",
+    "discount_ratio": "15.78",
+    "last_updated": "2026-03-23T05:36:10.010Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 182,
+  "fields": {
+    "symbol": "TMPV.NS",
+    "name": "Tata Motors Passenger Vehicles Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "306.40",
+    "currency": "INR",
+    "pe_ratio": "28.85",
+    "discount_ratio": "18.94",
+    "last_updated": "2026-03-23T05:36:10.320Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 183,
+  "fields": {
+    "symbol": "TATAPOWER.NS",
+    "name": "Tata Power Company Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "387.05",
+    "currency": "INR",
+    "pe_ratio": "32.61",
+    "discount_ratio": "4.75",
+    "last_updated": "2026-03-23T05:36:10.729Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 184,
+  "fields": {
+    "symbol": "TATASTEEL.NS",
+    "name": "Tata Steel Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "187.94",
+    "currency": "INR",
+    "pe_ratio": "0.30",
+    "discount_ratio": "11.40",
+    "last_updated": "2026-03-23T05:36:11.134Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 185,
+  "fields": {
+    "symbol": "TATATECH.NS",
+    "name": "Tata Technologies Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "528.15",
+    "currency": "INR",
+    "pe_ratio": "40.44",
+    "discount_ratio": "21.30",
+    "last_updated": "2026-03-23T05:36:11.648Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 186,
+  "fields": {
+    "symbol": "TECHM.NS",
+    "name": "Tech Mahindra Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "1391.90",
+    "currency": "INR",
+    "pe_ratio": "26.73",
+    "discount_ratio": "17.46",
+    "last_updated": "2026-03-23T05:36:12.160Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 187,
+  "fields": {
+    "symbol": "TITAN.NS",
+    "name": "Titan Company Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "3928.20",
+    "currency": "INR",
+    "pe_ratio": "73.01",
+    "discount_ratio": "18.05",
+    "last_updated": "2026-03-23T05:36:12.467Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 188,
+  "fields": {
+    "symbol": "TORNTPHARM.NS",
+    "name": "Torrent Pharmaceuticals Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "4187.50",
+    "currency": "INR",
+    "pe_ratio": "62.46",
+    "discount_ratio": "6.92",
+    "last_updated": "2026-03-23T05:36:12.875Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 189,
+  "fields": {
+    "symbol": "TORNTPOWER.NS",
+    "name": "Torrent Power Limited",
+    "exchange": "NSE",
+    "sector": "Utilities",
+    "current_price": "1385.00",
+    "currency": "INR",
+    "pe_ratio": "22.00",
+    "discount_ratio": "2.13",
+    "last_updated": "2026-03-23T05:36:13.284Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 190,
+  "fields": {
+    "symbol": "TRENT.NS",
+    "name": "Trent Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "3399.10",
+    "currency": "INR",
+    "pe_ratio": "74.02",
+    "discount_ratio": "27.24",
+    "last_updated": "2026-03-23T05:36:13.712Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 191,
+  "fields": {
+    "symbol": "TIINDIA.NS",
+    "name": "Tube Investments of India Limited",
+    "exchange": "NSE",
+    "sector": "Industrials",
+    "current_price": "2438.50",
+    "currency": "INR",
+    "pe_ratio": "78.76",
+    "discount_ratio": "23.20",
+    "last_updated": "2026-03-23T05:36:14.311Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 192,
+  "fields": {
+    "symbol": "UPL.NS",
+    "name": "UPL Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "611.10",
+    "currency": "INR",
+    "pe_ratio": "29.16",
+    "discount_ratio": "25.52",
+    "last_updated": "2026-03-23T05:36:14.617Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 193,
+  "fields": {
+    "symbol": "ULTRACEMCO.NS",
+    "name": "UltraTech Cement Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "10501.00",
+    "currency": "INR",
+    "pe_ratio": "40.35",
+    "discount_ratio": "25.33",
+    "last_updated": "2026-03-23T05:36:15.026Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 194,
+  "fields": {
+    "symbol": "UNIONBANK.NS",
+    "name": "Union Bank of India",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "168.50",
+    "currency": "INR",
+    "pe_ratio": "6.79",
+    "discount_ratio": "15.07",
+    "last_updated": "2026-03-23T05:36:15.438Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 195,
+  "fields": {
+    "symbol": "UNITDSPR.NS",
+    "name": "United Spirits Ltd.",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "1271.40",
+    "currency": "INR",
+    "pe_ratio": "52.58",
+    "discount_ratio": "18.23",
+    "last_updated": "2026-03-23T05:36:15.845Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 196,
+  "fields": {
+    "symbol": "VBL.NS",
+    "name": "Varun Beverages Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Defensive",
+    "current_price": "383.70",
+    "currency": "INR",
+    "pe_ratio": "42.68",
+    "discount_ratio": "31.28",
+    "last_updated": "2026-03-23T05:36:16.255Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 197,
+  "fields": {
+    "symbol": "VEDL.NS",
+    "name": "Vedanta Limited",
+    "exchange": "NSE",
+    "sector": "Basic Materials",
+    "current_price": "641.80",
+    "currency": "INR",
+    "pe_ratio": "17.81",
+    "discount_ratio": "20.64",
+    "last_updated": "2026-03-23T05:36:16.563Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 198,
+  "fields": {
+    "symbol": "VMM.NS",
+    "name": "Vishal Mega Mart Ltd.",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "99.34",
+    "currency": "INR",
+    "pe_ratio": "59.49",
+    "discount_ratio": "36.20",
+    "last_updated": "2026-03-23T05:36:16.972Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 199,
+  "fields": {
+    "symbol": "IDEA.NS",
+    "name": "Vodafone Idea Limited",
+    "exchange": "NSE",
+    "sector": "Communication Services",
+    "current_price": "8.91",
+    "currency": "INR",
+    "pe_ratio": "-4.16",
+    "discount_ratio": "10.73",
+    "last_updated": "2026-03-23T05:36:17.296Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 200,
+  "fields": {
+    "symbol": "VOLTAS.NS",
+    "name": "Voltas Limited",
+    "exchange": "NSE",
+    "sector": "Consumer Cyclical",
+    "current_price": "1235.50",
+    "currency": "INR",
+    "pe_ratio": "81.82",
+    "discount_ratio": "13.74",
+    "last_updated": "2026-03-23T05:36:17.689Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 201,
+  "fields": {
+    "symbol": "WAAREEENER.NS",
+    "name": "Waaree Energies Ltd.",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "3044.40",
+    "currency": "INR",
+    "pe_ratio": "26.79",
+    "discount_ratio": "11.05",
+    "last_updated": "2026-03-23T05:36:17.997Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 202,
+  "fields": {
+    "symbol": "WIPRO.NS",
+    "name": "Wipro Limited",
+    "exchange": "NSE",
+    "sector": "Technology",
+    "current_price": "189.66",
+    "currency": "INR",
+    "pe_ratio": "15.03",
+    "discount_ratio": "23.64",
+    "last_updated": "2026-03-23T05:36:18.303Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 203,
+  "fields": {
+    "symbol": "YESBANK.NS",
+    "name": "Yes Bank Limited",
+    "exchange": "NSE",
+    "sector": "Financial Services",
+    "current_price": "17.84",
+    "currency": "INR",
+    "pe_ratio": "17.66",
+    "discount_ratio": "12.00",
+    "last_updated": "2026-03-23T05:36:18.611Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 204,
+  "fields": {
+    "symbol": "ZYDUSLIFE.NS",
+    "name": "Zydus Lifesciences Limited",
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "current_price": "877.85",
+    "currency": "INR",
+    "pe_ratio": "17.89",
+    "discount_ratio": "11.66",
+    "last_updated": "2026-03-23T05:36:18.927Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 205,
+  "fields": {
+    "symbol": "GOOGL",
+    "name": "Alphabet Inc. (Class A)",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "301.00",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.590Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 206,
+  "fields": {
+    "symbol": "GOOG",
+    "name": "Alphabet Inc. (Class C)",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "298.79",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.613Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 207,
+  "fields": {
+    "symbol": "META",
+    "name": "Meta Platforms",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "593.66",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.637Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 208,
+  "fields": {
+    "symbol": "AVGO",
+    "name": "Broadcom",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "310.51",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.660Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 209,
+  "fields": {
+    "symbol": "TSLA",
+    "name": "Tesla, Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "367.96",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.691Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 210,
+  "fields": {
+    "symbol": "BRK.B",
+    "name": "Berkshire Hathaway",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "480.94",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.715Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 211,
+  "fields": {
+    "symbol": "WMT",
+    "name": "Walmart",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "119.02",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.738Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 212,
+  "fields": {
+    "symbol": "LLY",
+    "name": "Lilly (Eli)",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "906.70",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.763Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 213,
+  "fields": {
+    "symbol": "JPM",
+    "name": "JPMorgan Chase",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "286.56",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.789Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 214,
+  "fields": {
+    "symbol": "XOM",
+    "name": "ExxonMobil",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "159.67",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.811Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 215,
+  "fields": {
+    "symbol": "V",
+    "name": "Visa Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "301.62",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.833Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 216,
+  "fields": {
+    "symbol": "JNJ",
+    "name": "Johnson & Johnson",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "235.37",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.856Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 217,
+  "fields": {
+    "symbol": "MU",
+    "name": "Micron Technology",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "422.90",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.893Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 218,
+  "fields": {
+    "symbol": "MA",
+    "name": "Mastercard",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "496.32",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.925Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 219,
+  "fields": {
+    "symbol": "COST",
+    "name": "Costco",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "972.33",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.948Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 220,
+  "fields": {
+    "symbol": "ORCL",
+    "name": "Oracle Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "149.68",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.971Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 221,
+  "fields": {
+    "symbol": "CVX",
+    "name": "Chevron Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "201.73",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:00.994Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 222,
+  "fields": {
+    "symbol": "NFLX",
+    "name": "Netflix",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "91.82",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.017Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 223,
+  "fields": {
+    "symbol": "ABBV",
+    "name": "AbbVie",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "205.07",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.039Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 224,
+  "fields": {
+    "symbol": "PLTR",
+    "name": "Palantir Technologies",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "150.68",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.061Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 225,
+  "fields": {
+    "symbol": "BAC",
+    "name": "Bank of America",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "47.16",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.084Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 226,
+  "fields": {
+    "symbol": "PG",
+    "name": "Procter & Gamble",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "144.28",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.108Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 227,
+  "fields": {
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "201.33",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.130Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 228,
+  "fields": {
+    "symbol": "KO",
+    "name": "Coca-Cola Company (The)",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "74.75",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.155Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 229,
+  "fields": {
+    "symbol": "HD",
+    "name": "Home Depot (The)",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "320.75",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.178Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 230,
+  "fields": {
+    "symbol": "CAT",
+    "name": "Caterpillar Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "680.88",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.202Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 231,
+  "fields": {
+    "symbol": "CSCO",
+    "name": "Cisco",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "77.65",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.229Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 232,
+  "fields": {
+    "symbol": "GE",
+    "name": "GE Aerospace",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "286.79",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.253Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 233,
+  "fields": {
+    "symbol": "LRCX",
+    "name": "Lam Research",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "228.36",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.276Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 234,
+  "fields": {
+    "symbol": "AMAT",
+    "name": "Applied Materials",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "357.06",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.298Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 235,
+  "fields": {
+    "symbol": "MRK",
+    "name": "Merck & Co.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "114.18",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.320Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 236,
+  "fields": {
+    "symbol": "RTX",
+    "name": "RTX Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "198.16",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.343Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 237,
+  "fields": {
+    "symbol": "MS",
+    "name": "Morgan Stanley",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "161.47",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.367Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 238,
+  "fields": {
+    "symbol": "PM",
+    "name": "Philip Morris International",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "163.11",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.391Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 239,
+  "fields": {
+    "symbol": "UNH",
+    "name": "UnitedHealth Group",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "275.59",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.415Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 240,
+  "fields": {
+    "symbol": "GS",
+    "name": "Goldman Sachs",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "813.53",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.436Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 241,
+  "fields": {
+    "symbol": "WFC",
+    "name": "Wells Fargo",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "77.60",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.462Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 242,
+  "fields": {
+    "symbol": "TMUS",
+    "name": "T-Mobile US",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "208.47",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.484Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 243,
+  "fields": {
+    "symbol": "GEV",
+    "name": "GE Vernova",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "851.07",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.504Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 244,
+  "fields": {
+    "symbol": "IBM",
+    "name": "IBM",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "241.77",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.530Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 245,
+  "fields": {
+    "symbol": "LIN",
+    "name": "Linde plc",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "488.15",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.552Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 246,
+  "fields": {
+    "symbol": "MCD",
+    "name": "McDonald's",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "308.85",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.575Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 247,
+  "fields": {
+    "symbol": "INTC",
+    "name": "Intel",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "43.87",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.597Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 248,
+  "fields": {
+    "symbol": "VZ",
+    "name": "Verizon",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "49.98",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.621Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 249,
+  "fields": {
+    "symbol": "PEP",
+    "name": "PepsiCo",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "150.04",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.643Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 250,
+  "fields": {
+    "symbol": "AXP",
+    "name": "American Express",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "295.50",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.667Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 251,
+  "fields": {
+    "symbol": "T",
+    "name": "AT&T",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "28.31",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.687Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 252,
+  "fields": {
+    "symbol": "KLAC",
+    "name": "KLA Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "1498.67",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.710Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 253,
+  "fields": {
+    "symbol": "C",
+    "name": "Citigroup",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "109.52",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.731Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 254,
+  "fields": {
+    "symbol": "AMGN",
+    "name": "Amgen",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "347.80",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.754Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 255,
+  "fields": {
+    "symbol": "NEE",
+    "name": "NextEra Energy",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "89.50",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.780Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 256,
+  "fields": {
+    "symbol": "ABT",
+    "name": "Abbott Laboratories",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "105.46",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.802Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 257,
+  "fields": {
+    "symbol": "CRM",
+    "name": "Salesforce",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "195.38",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.833Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 258,
+  "fields": {
+    "symbol": "DIS",
+    "name": "Walt Disney Company (The)",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "99.51",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.858Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 259,
+  "fields": {
+    "symbol": "TMO",
+    "name": "Thermo Fisher Scientific",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "474.39",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.882Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 260,
+  "fields": {
+    "symbol": "TJX",
+    "name": "TJX Companies",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "154.98",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.907Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 261,
+  "fields": {
+    "symbol": "TXN",
+    "name": "Texas Instruments",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "187.19",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.931Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 262,
+  "fields": {
+    "symbol": "GILD",
+    "name": "Gilead Sciences",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "137.21",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.954Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 263,
+  "fields": {
+    "symbol": "ISRG",
+    "name": "Intuitive Surgical",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "477.97",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:01.978Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 264,
+  "fields": {
+    "symbol": "SCHW",
+    "name": "Charles Schwab Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "94.66",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.012Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 265,
+  "fields": {
+    "symbol": "ANET",
+    "name": "Arista Networks",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "131.22",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.036Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 266,
+  "fields": {
+    "symbol": "APH",
+    "name": "Amphenol",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "126.74",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.060Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 267,
+  "fields": {
+    "symbol": "COP",
+    "name": "ConocoPhillips",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "126.92",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.083Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 268,
+  "fields": {
+    "symbol": "PFE",
+    "name": "Pfizer",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "26.97",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.107Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 269,
+  "fields": {
+    "symbol": "BA",
+    "name": "Boeing",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "195.12",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.130Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 270,
+  "fields": {
+    "symbol": "UBER",
+    "name": "Uber",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "73.89",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.165Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 271,
+  "fields": {
+    "symbol": "DE",
+    "name": "Deere & Company",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "559.73",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.186Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 272,
+  "fields": {
+    "symbol": "ADI",
+    "name": "Analog Devices",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "309.43",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.209Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 273,
+  "fields": {
+    "symbol": "APP",
+    "name": "AppLovin Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "442.39",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.231Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 274,
+  "fields": {
+    "symbol": "BLK",
+    "name": "BlackRock",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "957.91",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.256Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 275,
+  "fields": {
+    "symbol": "LMT",
+    "name": "Lockheed Martin",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "627.43",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.279Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 276,
+  "fields": {
+    "symbol": "HON",
+    "name": "Honeywell",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "221.50",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.301Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 277,
+  "fields": {
+    "symbol": "UNP",
+    "name": "Union Pacific Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "234.92",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.327Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 278,
+  "fields": {
+    "symbol": "QCOM",
+    "name": "Qualcomm",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "129.90",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.352Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 279,
+  "fields": {
+    "symbol": "ETN",
+    "name": "Eaton Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "356.80",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.377Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 280,
+  "fields": {
+    "symbol": "BKNG",
+    "name": "Booking Holdings",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "4324.04",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.400Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 281,
+  "fields": {
+    "symbol": "WELL",
+    "name": "Welltower",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "195.94",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.424Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 282,
+  "fields": {
+    "symbol": "DHR",
+    "name": "Danaher Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "189.35",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.447Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 283,
+  "fields": {
+    "symbol": "PANW",
+    "name": "Palo Alto Networks",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "162.95",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.475Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 284,
+  "fields": {
+    "symbol": "SYK",
+    "name": "Stryker Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "335.67",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.496Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 285,
+  "fields": {
+    "symbol": "SPGI",
+    "name": "S&P Global",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "424.43",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.519Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 286,
+  "fields": {
+    "symbol": "LOW",
+    "name": "Lowe's",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "224.63",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.547Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 287,
+  "fields": {
+    "symbol": "INTU",
+    "name": "Intuit",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "455.56",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.573Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 288,
+  "fields": {
+    "symbol": "CB",
+    "name": "Chubb Limited",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "322.58",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.597Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 289,
+  "fields": {
+    "symbol": "ACN",
+    "name": "Accenture",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "199.99",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.621Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 290,
+  "fields": {
+    "symbol": "PGR",
+    "name": "Progressive Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "206.00",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.644Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 291,
+  "fields": {
+    "symbol": "PLD",
+    "name": "Prologis",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "128.01",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.669Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 292,
+  "fields": {
+    "symbol": "BMY",
+    "name": "Bristol Myers Squibb",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "57.48",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.697Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 293,
+  "fields": {
+    "symbol": "NOW",
+    "name": "ServiceNow",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "110.38",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.729Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 294,
+  "fields": {
+    "symbol": "VRTX",
+    "name": "Vertex Pharmaceuticals",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "454.00",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.772Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 295,
+  "fields": {
+    "symbol": "PH",
+    "name": "Parker Hannifin",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "894.41",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.830Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 296,
+  "fields": {
+    "symbol": "COF",
+    "name": "Capital One",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "181.46",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.862Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 297,
+  "fields": {
+    "symbol": "MDT",
+    "name": "Medtronic",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "86.16",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.884Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 298,
+  "fields": {
+    "symbol": "HCA",
+    "name": "HCA Healthcare",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "493.88",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.909Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 299,
+  "fields": {
+    "symbol": "CME",
+    "name": "CME Group",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "307.32",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.932Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 300,
+  "fields": {
+    "symbol": "MCK",
+    "name": "McKesson Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "885.84",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.957Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 301,
+  "fields": {
+    "symbol": "MO",
+    "name": "Altria",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "64.47",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:02.981Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 302,
+  "fields": {
+    "symbol": "GLW",
+    "name": "Corning Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "124.58",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.004Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 303,
+  "fields": {
+    "symbol": "SBUX",
+    "name": "Starbucks",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "92.55",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.025Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 304,
+  "fields": {
+    "symbol": "SNDK",
+    "name": "Sandisk Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "709.71",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.047Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 305,
+  "fields": {
+    "symbol": "SO",
+    "name": "Southern Company",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "93.39",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.070Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 306,
+  "fields": {
+    "symbol": "CMCSA",
+    "name": "Comcast",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "29.02",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.093Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 307,
+  "fields": {
+    "symbol": "NEM",
+    "name": "Newmont",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "95.80",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.117Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 308,
+  "fields": {
+    "symbol": "CRWD",
+    "name": "CrowdStrike",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "409.00",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.140Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 309,
+  "fields": {
+    "symbol": "BSX",
+    "name": "Boston Scientific",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "69.48",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.165Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 310,
+  "fields": {
+    "symbol": "CEG",
+    "name": "Constellation Energy",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "281.99",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.189Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 311,
+  "fields": {
+    "symbol": "DELL",
+    "name": "Dell Technologies",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "157.67",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.211Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 312,
+  "fields": {
+    "symbol": "ADBE",
+    "name": "Adobe Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "248.15",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.234Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 313,
+  "fields": {
+    "symbol": "NOC",
+    "name": "Northrop Grumman",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "706.95",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.258Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 314,
+  "fields": {
+    "symbol": "WDC",
+    "name": "Western Digital",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "293.10",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.281Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 315,
+  "fields": {
+    "symbol": "DUK",
+    "name": "Duke Energy",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "126.81",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.305Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 316,
+  "fields": {
+    "symbol": "EQIX",
+    "name": "Equinix",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "959.16",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.330Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 317,
+  "fields": {
+    "symbol": "GD",
+    "name": "General Dynamics",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "345.78",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.354Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 318,
+  "fields": {
+    "symbol": "WM",
+    "name": "Waste Management",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "231.24",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.377Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 319,
+  "fields": {
+    "symbol": "HWM",
+    "name": "Howmet Aerospace",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "231.21",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.419Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 320,
+  "fields": {
+    "symbol": "STX",
+    "name": "Seagate Technology",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "411.23",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.458Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 321,
+  "fields": {
+    "symbol": "CVS",
+    "name": "CVS Health",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "71.48",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.480Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 322,
+  "fields": {
+    "symbol": "TT",
+    "name": "Trane Technologies",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "410.36",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.512Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 323,
+  "fields": {
+    "symbol": "ICE",
+    "name": "Intercontinental Exchange",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "158.43",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.536Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 324,
+  "fields": {
+    "symbol": "WMB",
+    "name": "Williams Companies",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "72.41",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.558Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 325,
+  "fields": {
+    "symbol": "BX",
+    "name": "Blackstone Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "110.43",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.579Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 326,
+  "fields": {
+    "symbol": "MRSH",
+    "name": "Marsh & McLennan Companies, Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "176.48",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.601Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 327,
+  "fields": {
+    "symbol": "MAR",
+    "name": "Marriott International",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "319.76",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.630Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 328,
+  "fields": {
+    "symbol": "FDX",
+    "name": "FedEx",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "358.85",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.657Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 329,
+  "fields": {
+    "symbol": "ADP",
+    "name": "Automatic Data Processing",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "208.69",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.684Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 330,
+  "fields": {
+    "symbol": "PWR",
+    "name": "Quanta Services",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "555.39",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.707Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 331,
+  "fields": {
+    "symbol": "AMT",
+    "name": "American Tower",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "176.79",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.728Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 332,
+  "fields": {
+    "symbol": "UPS",
+    "name": "United Parcel Service",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "95.86",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.749Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 333,
+  "fields": {
+    "symbol": "PNC",
+    "name": "PNC Financial Services",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "201.71",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.771Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 334,
+  "fields": {
+    "symbol": "SNPS",
+    "name": "Synopsys",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "420.32",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.793Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 335,
+  "fields": {
+    "symbol": "KKR",
+    "name": "KKR",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "90.00",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.815Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 336,
+  "fields": {
+    "symbol": "USB",
+    "name": "U.S. Bancorp",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "51.25",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.842Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 337,
+  "fields": {
+    "symbol": "JCI",
+    "name": "Johnson Controls",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "129.70",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.866Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 338,
+  "fields": {
+    "symbol": "BK",
+    "name": "BNY Mellon",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "114.94",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.894Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 339,
+  "fields": {
+    "symbol": "CDNS",
+    "name": "Cadence Design Systems",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "283.90",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.923Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 340,
+  "fields": {
+    "symbol": "NKE",
+    "name": "Nike, Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "52.37",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.947Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 341,
+  "fields": {
+    "symbol": "REGN",
+    "name": "Regeneron Pharmaceuticals",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "732.87",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.968Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 342,
+  "fields": {
+    "symbol": "MCO",
+    "name": "Moody's Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "435.12",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:03.992Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 343,
+  "fields": {
+    "symbol": "ABNB",
+    "name": "Airbnb",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "128.52",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.011Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 344,
+  "fields": {
+    "symbol": "SHW",
+    "name": "Sherwin-Williams",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "303.53",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.036Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 345,
+  "fields": {
+    "symbol": "MSI",
+    "name": "Motorola Solutions",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "452.35",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.058Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 346,
+  "fields": {
+    "symbol": "FCX",
+    "name": "Freeport-McMoRan",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "52.09",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.077Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 347,
+  "fields": {
+    "symbol": "EOG",
+    "name": "EOG Resources",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "138.73",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.101Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 348,
+  "fields": {
+    "symbol": "MMM",
+    "name": "3M",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "141.20",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.124Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 349,
+  "fields": {
+    "symbol": "ITW",
+    "name": "Illinois Tool Works",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "257.68",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.147Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 350,
+  "fields": {
+    "symbol": "CMI",
+    "name": "Cummins",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "533.54",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.170Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 351,
+  "fields": {
+    "symbol": "ORLY",
+    "name": "O'Reilly Auto Parts",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "87.30",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.193Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 352,
+  "fields": {
+    "symbol": "KMI",
+    "name": "Kinder Morgan",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "32.84",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.216Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 353,
+  "fields": {
+    "symbol": "ECL",
+    "name": "Ecolab",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "256.48",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.240Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 354,
+  "fields": {
+    "symbol": "MNST",
+    "name": "Monster Beverage",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "73.69",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.269Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 355,
+  "fields": {
+    "symbol": "MDLZ",
+    "name": "Mondelez International",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "56.21",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.290Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 356,
+  "fields": {
+    "symbol": "EMR",
+    "name": "Emerson Electric",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "128.15",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.311Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 357,
+  "fields": {
+    "symbol": "CTAS",
+    "name": "Cintas",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "179.34",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.336Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 358,
+  "fields": {
+    "symbol": "VLO",
+    "name": "Valero Energy",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "239.86",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.361Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 359,
+  "fields": {
+    "symbol": "RCL",
+    "name": "Royal Caribbean Group",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "263.65",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.384Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 360,
+  "fields": {
+    "symbol": "CSX",
+    "name": "CSX Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "38.17",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.404Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 361,
+  "fields": {
+    "symbol": "PSX",
+    "name": "Phillips 66",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "175.47",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.425Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 362,
+  "fields": {
+    "symbol": "SLB",
+    "name": "Schlumberger",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "46.63",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.465Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 363,
+  "fields": {
+    "symbol": "AON",
+    "name": "Aon",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "325.63",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.490Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 364,
+  "fields": {
+    "symbol": "CI",
+    "name": "Cigna",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "262.84",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.514Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 365,
+  "fields": {
+    "symbol": "MPC",
+    "name": "Marathon Petroleum",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "232.53",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.545Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 366,
+  "fields": {
+    "symbol": "ROST",
+    "name": "Ross Stores",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "211.19",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.569Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 367,
+  "fields": {
+    "symbol": "CL",
+    "name": "Colgate-Palmolive",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "85.12",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.592Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 368,
+  "fields": {
+    "symbol": "DASH",
+    "name": "DoorDash",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "156.64",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.620Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 369,
+  "fields": {
+    "symbol": "WBD",
+    "name": "Warner Bros. Discovery",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "27.42",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.645Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 370,
+  "fields": {
+    "symbol": "AEP",
+    "name": "American Electric Power",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "125.66",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.670Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 371,
+  "fields": {
+    "symbol": "RSG",
+    "name": "Republic Services",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "219.30",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.695Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 372,
+  "fields": {
+    "symbol": "CRH",
+    "name": "CRH plc",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "100.47",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.717Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 373,
+  "fields": {
+    "symbol": "HLT",
+    "name": "Hilton Worldwide",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "292.58",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.740Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 374,
+  "fields": {
+    "symbol": "TDG",
+    "name": "TransDigm Group",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "1177.39",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.766Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 375,
+  "fields": {
+    "symbol": "LHX",
+    "name": "L3Harris",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "352.85",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.794Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 376,
+  "fields": {
+    "symbol": "GM",
+    "name": "General Motors",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "72.81",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.819Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 377,
+  "fields": {
+    "symbol": "APO",
+    "name": "Apollo Global Management",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "112.00",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.845Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 378,
+  "fields": {
+    "symbol": "ELV",
+    "name": "Elevance Health",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "291.48",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.868Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 379,
+  "fields": {
+    "symbol": "TRV",
+    "name": "Travelers Companies (The)",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "296.60",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.892Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 380,
+  "fields": {
+    "symbol": "HOOD",
+    "name": "Robinhood Markets, Inc.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "70.89",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.914Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 381,
+  "fields": {
+    "symbol": "COR",
+    "name": "Cencora",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "326.91",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.939Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 382,
+  "fields": {
+    "symbol": "NSC",
+    "name": "Norfolk Southern Railway",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "281.09",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.962Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 383,
+  "fields": {
+    "symbol": "APD",
+    "name": "Air Products",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "281.01",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:04.985Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 384,
+  "fields": {
+    "symbol": "FTNT",
+    "name": "Fortinet",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "81.40",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.009Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 385,
+  "fields": {
+    "symbol": "SPG",
+    "name": "Simon Property Group",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "184.52",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.030Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 386,
+  "fields": {
+    "symbol": "SRE",
+    "name": "Sempra",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "91.72",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.060Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 387,
+  "fields": {
+    "symbol": "OXY",
+    "name": "Occidental Petroleum",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "60.71",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.083Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 388,
+  "fields": {
+    "symbol": "BKR",
+    "name": "Baker Hughes",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "60.35",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.108Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 389,
+  "fields": {
+    "symbol": "DLR",
+    "name": "Digital Realty",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "173.30",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.134Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 390,
+  "fields": {
+    "symbol": "PCAR",
+    "name": "Paccar",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "111.26",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.158Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 391,
+  "fields": {
+    "symbol": "TEL",
+    "name": "TE Connectivity",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "195.84",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.185Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 392,
+  "fields": {
+    "symbol": "O",
+    "name": "Realty Income",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "60.95",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.209Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 393,
+  "fields": {
+    "symbol": "OKE",
+    "name": "ONEOK",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "89.21",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.230Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 394,
+  "fields": {
+    "symbol": "AJG",
+    "name": "Arthur J. Gallagher & Co.",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "214.82",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.250Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 395,
+  "fields": {
+    "symbol": "AFL",
+    "name": "Aflac",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "106.22",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.273Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 396,
+  "fields": {
+    "symbol": "TFC",
+    "name": "Truist Financial",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "44.16",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.297Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 397,
+  "fields": {
+    "symbol": "CIEN",
+    "name": "Ciena Corporation",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "383.89",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.328Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 398,
+  "fields": {
+    "symbol": "AZO",
+    "name": "AutoZone",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "3282.90",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.356Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 399,
+  "fields": {
+    "symbol": "FANG",
+    "name": "Diamondback Energy",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "192.54",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.380Z"
+  }
+},
+{
+  "model": "stocks.stock",
+  "pk": 400,
+  "fields": {
+    "symbol": "ALL",
+    "name": "Allstate",
+    "exchange": "NASDAQ",
+    "sector": null,
+    "current_price": "205.62",
+    "currency": "USD",
+    "pe_ratio": null,
+    "discount_ratio": null,
+    "last_updated": "2026-03-23T06:45:05.402Z"
+  }
+}
+]
