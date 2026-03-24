@@ -11,6 +11,7 @@ import Stock from './components/dashboard/Stock';
 import Portfolio from './components/dashboard/Portfolio';
 import Forecast from './components/dashboard/Forecast';
 import SentimentAnalysis from './components/dashboard/SentimentAnalysis';
+import Recommend from './components/dashboard/Recommend';
 import Profile from './components/dashboard/Profile';
 import Settings from './components/dashboard/Settings';
 import MyCollections from './components/dashboard/MyCollections';
@@ -35,6 +36,7 @@ function App() {
             <Route path="portfolio" element={<Portfolio />} />
             <Route path="forecast" element={<Forecast />} />
             <Route path="sentiment" element={<SentimentAnalysis />} />
+            <Route path="recommend" element={<Recommend />} />
             <Route path="profile" element={<Profile />} />
             <Route path="settings" element={<Settings />} />
             <Route path="collections" element={<MyCollections />} />

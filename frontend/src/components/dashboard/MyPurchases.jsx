@@ -23,6 +23,28 @@ const MyPurchases = () => {
     fetchPurchases();
   }, []);
 
+  const groupPurchases = () => {
+    const groups = {};
+    purchases.forEach(purchase => {
+      // Group by portfolio_name and date (to keep bulk purchases together)
+      const dateKey = new Date(purchase.purchased_at).toDateString();
+      const groupKey = purchase.portfolio_name ? `portfolio-${purchase.portfolio_name}-${dateKey}` : 'individual';
+      
+      if (!groups[groupKey]) {
+        groups[groupKey] = {
+          name: purchase.portfolio_name || 'Individual Purchases',
+          date: dateKey,
+          items: [],
+          total: 0,
+          isPortfolio: !!purchase.portfolio_name
+        };
+      }
+      groups[groupKey].items.push(purchase);
+      groups[groupKey].total += parseFloat(purchase.total_amount);
+    });
+    return Object.values(groups).sort((a, b) => new Date(b.date) - new Date(a.date));
+  };
+
   if (loading) {
     return (
       <div className="flex items-center justify-center min-h-[400px]">
@@ -52,47 +74,67 @@ const MyPurchases = () => {
       </header>
 
       {purchases.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {purchases.map((purchase) => (
-            <div key={purchase.id} className="glass-panel border border-white/5 overflow-hidden group hover:bg-white/10 transition-all duration-300 bg-white/3">
-              <div className="p-8">
-                <div className="flex justify-between items-start mb-6">
-                  <div className="flex flex-col">
-                    <span className="px-3 py-1 bg-white/10 border border-white/5 text-light-accent text-[10px] font-black rounded-lg uppercase tracking-widest w-fit mb-2">
-                      {purchase.stock.symbol}
+        <div className="space-y-12">
+          {groupPurchases().map((group, groupIdx) => (
+            <div key={groupIdx} className="animate-in fade-in slide-in-from-left-4 duration-500">
+              <div className="flex items-center justify-between mb-6">
+                <div className="flex items-center space-x-3">
+                  <div className={`w-2 h-8 rounded-full ${group.isPortfolio ? 'bg-green-500' : 'bg-blue-500'}`}></div>
+                  <h2 className="text-2xl font-black text-white uppercase tracking-tight">
+                    {group.isPortfolio ? `Portfolio: ${group.name}` : 'Direct Purchases'}
+                    <span className="ml-3 text-sm font-bold text-gray-400 bg-white/5 border border-white/5 px-3 py-1 rounded-full lowercase">
+                      {group.items.length} {group.items.length === 1 ? 'asset' : 'assets'}
                     </span>
-                    <h3 className="text-2xl font-black text-white group-hover:text-light-accent transition-colors">
-                      {purchase.stock.name}
-                    </h3>
-                  </div>
+                  </h2>
                 </div>
-
-                <div className="grid grid-cols-2 gap-4 mt-8">
-                  <div className="bg-white/5 border border-white/5 p-4 rounded-2xl">
-                    <span className="text-gray-400 text-[10px] font-black uppercase tracking-widest block mb-1">Quantity</span>
-                    <span className="text-xl font-black text-white">{purchase.quantity} Shares</span>
-                  </div>
-                  <div className="bg-white/5 border border-white/5 p-4 rounded-2xl">
-                    <span className="text-gray-400 text-[10px] font-black uppercase tracking-widest block mb-1">Total Paid</span>
-                    <span className="text-xl font-black text-white">
-                      {purchase.stock.currency === 'USD' ? '$' : '₹'}{parseFloat(purchase.total_amount).toLocaleString()}
-                    </span>
-                  </div>
-                </div>
-
-                <div className="mt-6 flex items-center justify-between text-[10px] font-bold text-gray-400 uppercase tracking-tighter">
-                  <div className="flex items-center">
-                    <Calendar size={12} className="mr-1" />
-                    <span>{new Date(purchase.purchased_at).toLocaleDateString()}</span>
-                  </div>
-                  <span className="text-light-accent">Avg Price: {purchase.stock.currency === 'USD' ? '$' : '₹'}{parseFloat(purchase.purchase_price).toLocaleString()}</span>
+                <div className="flex items-center space-x-4">
+                   <div className="text-right">
+                     <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest block">Total Group Value</span>
+                     <span className="text-lg font-black text-white">
+                       {group.items[0]?.stock.currency === 'USD' ? '$' : '₹'}{group.total.toLocaleString()}
+                     </span>
+                   </div>
                 </div>
               </div>
-              
-              <div className="px-8 pb-8">
-                <button className="glass-button bg-blue-500/10 border border-blue-500/20 hover:bg-blue-500/20 w-full p-4 rounded-2xl text-xs font-black uppercase tracking-[0.2em] transition-all active:scale-95 text-white">
-                  Order Receipt
-                </button>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {group.items.map((purchase) => (
+                  <div key={purchase.id} className="glass-panel border border-white/5 overflow-hidden group hover:bg-white/10 transition-all duration-300 bg-white/3">
+                    <div className="p-8">
+                      <div className="flex justify-between items-start mb-6">
+                        <div className="flex flex-col">
+                          <span className="px-3 py-1 bg-white/10 border border-white/5 text-light-accent text-[10px] font-black rounded-lg uppercase tracking-widest w-fit mb-2">
+                            {purchase.stock.symbol}
+                          </span>
+                          <h3 className="text-xl font-black text-white group-hover:text-light-accent transition-colors truncate max-w-[200px]">
+                            {purchase.stock.name}
+                          </h3>
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-2 gap-4 mt-8">
+                        <div className="bg-white/5 border border-white/5 p-4 rounded-2xl">
+                          <span className="text-gray-400 text-[10px] font-black uppercase tracking-widest block mb-1">Quantity</span>
+                          <span className="text-base font-black text-white">{purchase.quantity} Shares</span>
+                        </div>
+                        <div className="bg-white/5 border border-white/5 p-4 rounded-2xl">
+                          <span className="text-gray-400 text-[10px] font-black uppercase tracking-widest block mb-1">Total Paid</span>
+                          <span className="text-base font-black text-white">
+                            {purchase.stock.currency === 'USD' ? '$' : '₹'}{parseFloat(purchase.total_amount).toLocaleString()}
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="mt-6 flex items-center justify-between text-[10px] font-bold text-gray-400 uppercase tracking-tighter">
+                        <div className="flex items-center">
+                          <Calendar size={12} className="mr-1" />
+                          <span>{new Date(purchase.purchased_at).toLocaleDateString()}</span>
+                        </div>
+                        <span className="text-light-accent">Price: {purchase.stock.currency === 'USD' ? '$' : '₹'}{parseFloat(purchase.purchase_price).toLocaleString()}</span>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}

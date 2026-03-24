@@ -8,6 +8,7 @@ import {
   Briefcase, 
   LineChart, 
   BarChart3,
+  Sparkles
 } from 'lucide-react';
 
 const CustomerWelcome = () => {
@@ -76,6 +77,17 @@ const CustomerWelcome = () => {
               <span>{item.name}</span>
             </button>
           ))}
+          <button
+            onClick={() => navigate('/customer-welcome/recommend')}
+            className={`flex items-center space-x-2 px-6 py-2.5 rounded-full transition-all duration-300 font-black text-sm ml-2 ${
+              activePath === '/customer-welcome/recommend'
+                ? 'bg-cyan-400 text-primary-dark shadow-[0_0_20px_rgba(34,211,238,0.4)] scale-105'
+                : 'bg-cyan-500/10 text-cyan-400 hover:bg-cyan-500/20 hover:scale-105 border border-cyan-500/20'
+            }`}
+          >
+            <Sparkles size={20} className="animate-pulse" />
+            <span>Recommend</span>
+          </button>
         </div>
 
         {/* Top Right Profile Section */}

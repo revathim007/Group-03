@@ -61,42 +61,54 @@ class CollectionSerializer(serializers.ModelSerializer):
     stock_id = serializers.IntegerField(write_only=True)
     user_id = serializers.IntegerField(write_only=True)
     portfolio_name = serializers.CharField(required=False, allow_null=True, allow_blank=True)
+    portfolio_id = serializers.CharField(required=False, allow_null=True, allow_blank=True)
 
     class Meta:
         model = Collection
-        fields = ['id', 'stock', 'stock_id', 'user_id', 'portfolio_name', 'added_at']
+        fields = ['id', 'stock', 'stock_id', 'user_id', 'portfolio_name', 'portfolio_id', 'added_at']
 
     def create(self, validated_data):
         stock_id = validated_data.pop('stock_id')
         user_id = validated_data.pop('user_id')
         portfolio_name = validated_data.get('portfolio_name')
+        portfolio_id = validated_data.get('portfolio_id')
         stock = Stock.objects.get(id=stock_id)
         user = User.objects.get(id=user_id)
         
         collection, created = Collection.objects.update_or_create(
             user=user,
             stock=stock,
-            defaults={'portfolio_name': portfolio_name}
+            defaults={
+                'portfolio_name': portfolio_name,
+                'portfolio_id': portfolio_id
+            }
         )
         return collection
 
 class PurchaseSerializer(serializers.ModelSerializer):
     stock = StockSerializer(read_only=True)
     stock_id = serializers.IntegerField(write_only=True)
+    user_id = serializers.IntegerField(write_only=True)
 
     class Meta:
         model = Purchase
-        fields = ['id', 'stock', 'stock_id', 'quantity', 'purchase_price', 'total_amount', 'purchased_at']
+        fields = ['id', 'stock', 'stock_id', 'user_id', 'quantity', 'purchase_price', 'total_amount', 'portfolio_name', 'purchased_at']
         read_only_fields = ['purchase_price', 'total_amount', 'purchased_at']
 
     def create(self, validated_data):
         stock_id = validated_data.pop('stock_id')
+        user_id = validated_data.pop('user_id')
         stock = Stock.objects.get(id=stock_id)
+        user = User.objects.get(id=user_id)
         quantity = validated_data['quantity']
-        purchase_price = stock.current_price
-        total_amount = purchase_price * quantity
+        
+        # Ensure we have a valid price, default to 0 if None
+        price_val = stock.current_price if stock.current_price is not None else 0
+        purchase_price = price_val
+        total_amount = price_val * quantity
         
         purchase = Purchase.objects.create(
+            user=user,
             stock=stock,
             purchase_price=purchase_price,
             total_amount=total_amount,

@@ -133,16 +133,46 @@ const Portfolio = () => {
     setAddingToCollection(prev => ({ ...prev, [portfolio.id]: true }));
     try {
       const userData = JSON.parse(localStorage.getItem('user'));
-      const promises = portfolio.items.map(item => 
+      
+      // 1. Fetch current collections to find existing items for this portfolio
+      const collectionsRes = await axios.get(`http://localhost:8000/api/stocks/collections/?user_id=${userData.id}`);
+      const existingCollections = collectionsRes.data;
+      
+      // Find items that belong to this portfolio (using name as fallback, but ideally portfolio_id if we have it)
+      // Note: built-in portfolios use IDs like 'builtin-0', user ones use database numeric IDs.
+      const portfolioIdToMatch = portfolio.id.toString();
+      const itemsInThisPortfolio = existingCollections.filter(item => 
+        item.portfolio_id === portfolioIdToMatch || 
+        (!item.portfolio_id && item.portfolio_name === portfolio.name)
+      );
+      
+      const isExisting = itemsInThisPortfolio.length > 0;
+
+      // 2. Identify stocks to remove (those currently in collection for this portfolio but NOT in the new portfolio state)
+      const currentStockIds = portfolio.items.map(item => item.stock.id);
+      const itemsToRemove = itemsInThisPortfolio.filter(item => !currentStockIds.includes(item.stock.id));
+      
+      const deletePromises = itemsToRemove.map(item => 
+        axios.delete(`http://localhost:8000/api/stocks/collections/delete/?user_id=${userData.id}&stock_id=${item.stock.id}`)
+      );
+
+      // 3. Add/Update all current stocks from the portfolio
+      const addPromises = portfolio.items.map(item => 
         axios.post('http://localhost:8000/api/stocks/collections/', {
           user_id: userData.id,
           stock_id: item.stock.id,
-          portfolio_name: portfolio.name
+          portfolio_name: portfolio.name,
+          portfolio_id: portfolioIdToMatch
         })
       );
       
-      await Promise.all(promises);
-      alert(`All stocks from "${portfolio.name}" added to your collection!`);
+      await Promise.all([...deletePromises, ...addPromises]);
+      
+      if (isExisting) {
+        alert('updated');
+      } else {
+        alert(`${portfolio.name} added to my collection`);
+      }
     } catch (error) {
       console.error('Error adding stocks to collection:', error);
       alert('Some stocks might already be in your collection or failed to add.');
@@ -232,121 +262,65 @@ const Portfolio = () => {
         </div>
       </header>
 
-      {/* Built-in Portfolios Section */}
-      {builtInPortfolios.length > 0 && (
-        <div className="mb-12">
-          <div className="flex items-center space-x-2 mb-6">
-            <Layers className="text-light-accent" size={24} />
-            <h2 className="text-2xl font-black">System Portfolios</h2>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {builtInPortfolios.map((portfolio, index) => {
-              const cardColor = getPortfolioColor(index + 3); // Start from a different color
-              return (
-                <div key={portfolio.id} className="glass-panel overflow-hidden group hover:shadow-2xl transition-all duration-300 flex flex-col border border-white/5">
-                  <div className="p-8 flex-1">
-                    <div className="flex justify-between items-start mb-6">
-                      <span className={`px-3 py-1 ${cardColor.glow} ${cardColor.text} text-[10px] font-black rounded-lg uppercase tracking-widest border ${cardColor.border}`}>
-                        BUILT-IN
-                      </span>
-                    </div>
-                    
-                    <h3 className="text-2xl font-black text-white mb-2 group-hover:text-light-accent transition-colors">
-                      {portfolio.name}
-                    </h3>
-                    
-                    <p className="text-gray-400 text-xs font-medium mb-4 line-clamp-2">
-                      {portfolio.description}
-                    </p>
-
-                    <div className="space-y-4 max-h-60 overflow-y-auto pr-2 custom-scrollbar">
-                      <div className="space-y-2">
-                        <div className="flex flex-wrap gap-2">
-                          {portfolio.items.map((item) => (
-                            <div key={item.stock.id} className="flex items-center space-x-1 bg-white/5 px-2.5 py-1 rounded-md border border-white/5">
-                              <span className="text-[10px] font-black text-gray-200 uppercase">
-                                {item.stock.symbol.split('.')[0]}
-                              </span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div className="px-8 pb-8">
-                    <button 
-                      onClick={() => handleBulkAddToCollection(portfolio)}
-                      disabled={addingToCollection[portfolio.id]}
-                      className="w-full glass-button p-4 rounded-xl text-xs font-black uppercase tracking-widest hover:glass-button-active active:scale-95 flex items-center justify-center"
-                    >
-                      {addingToCollection[portfolio.id] ? (
-                        <span className="flex items-center">
-                          <Layers size={14} className="animate-spin mr-2" />
-                          Adding...
-                        </span>
-                      ) : (
-                        'Add Entire Sector to Collection'
-                      )}
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
       {/* User Portfolios Section */}
-      <div className="flex items-center space-x-2 mb-6 mt-12">
-        <Briefcase className="text-light-accent" size={24} />
-        <h2 className="text-2xl font-black">Custom Portfolios</h2>
+      <div className="flex items-center space-x-3 mb-8">
+        <div className="bg-light-accent/20 p-2.5 rounded-2xl border border-light-accent/30 shadow-[0_0_15px_rgba(56,189,248,0.2)]">
+          <Briefcase className="text-light-accent" size={24} />
+        </div>
+        <div>
+          <h2 className="text-3xl font-black tracking-tight text-white">Custom Collections</h2>
+          <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mt-1">Your personal investment strategies</p>
+        </div>
       </div>
+
       {filteredPortfolios.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {filteredPortfolios.map((portfolio, index) => {
             const cardColor = getPortfolioColor(index);
             return (
-              <div key={portfolio.id} className="glass-panel overflow-hidden group hover:shadow-2xl transition-all duration-300 flex flex-col border border-white/5">
-                <div className="p-8 flex-1">
+              <div key={portfolio.id} className="glass-panel overflow-hidden group hover:shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-500 flex flex-col border border-white/10 relative">
+                {/* Accent Glow */}
+                <div className={`absolute -top-24 -right-24 w-48 h-48 rounded-full blur-[80px] opacity-20 group-hover:opacity-40 transition-opacity duration-700 ${cardColor.glow}`}></div>
+                
+                <div className="p-8 flex-1 relative z-10">
                   <div className="flex justify-between items-start mb-6">
-                    <span className={`px-3 py-1 ${cardColor.glow} ${cardColor.text} text-[10px] font-black rounded-lg uppercase tracking-widest border ${cardColor.border}`}>
+                    <span className={`px-4 py-1.5 ${cardColor.glow} ${cardColor.text} text-[10px] font-black rounded-xl uppercase tracking-widest border ${cardColor.border} shadow-sm`}>
                       ID: {portfolio.portfolio_id}
                     </span>
                     <div 
                       onClick={() => handleDeletePortfolio(portfolio.id, portfolio.name)}
-                      className="text-gray-400 hover:text-red-500 transition-colors cursor-pointer"
+                      className="w-8 h-8 flex items-center justify-center rounded-lg bg-red-500/10 text-red-400/60 hover:text-red-400 hover:bg-red-500/20 transition-all cursor-pointer border border-red-500/10"
                     >
-                      <Trash2 size={18} />
+                      <Trash2 size={16} />
                     </div>
                   </div>
                   
-                  <h3 className="text-2xl font-black text-white mb-2 group-hover:text-light-accent transition-colors">
+                  <h3 className="text-2xl font-black text-white mb-3 group-hover:text-light-accent transition-colors leading-tight">
                     {portfolio.name}
                   </h3>
                   
                   {portfolio.description && (
-                    <p className="text-gray-400 text-xs font-medium mb-4 line-clamp-2">
+                    <p className="text-gray-400 text-sm font-medium mb-6 line-clamp-2 leading-relaxed opacity-80">
                       {portfolio.description}
                     </p>
                   )}
                   
-                  <div className="flex items-center text-gray-400 text-xs font-bold mb-6">
-                    <Calendar size={14} className="mr-1.5" />
+                  <div className="flex items-center text-gray-500 text-[10px] font-black uppercase tracking-wider mb-8">
+                    <Calendar size={14} className="mr-2 text-gray-600" />
                     <span>Created {new Date(portfolio.created_at).toLocaleDateString()}</span>
                   </div>
 
-                  <div className="space-y-4 mb-8">
-                    <div className="flex justify-between items-center pb-3 border-b border-white/5">
-                      <span className="text-gray-400 font-bold text-xs uppercase tracking-wider">Asset Value</span>
-                      <span className="text-lg font-black text-white">
+                  <div className="grid grid-cols-2 gap-4 mb-8">
+                    <div className="p-4 bg-white/5 rounded-2xl border border-white/5 flex flex-col">
+                      <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1">Net Worth</span>
+                      <span className="text-xl font-black text-white">
                         ₹{calculateTotalValue(portfolio.items).toLocaleString('en-IN')}
                       </span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-400 font-bold text-xs uppercase tracking-wider">Stocks</span>
-                      <span className={`text-sm font-black ${cardColor.text} ${cardColor.glow} px-3 py-1 rounded-lg border ${cardColor.border}`}>
-                        {portfolio.items.length} Items
+                    <div className="p-4 bg-white/5 rounded-2xl border border-white/5 flex flex-col">
+                      <span className="text-[10px] font-black text-gray-500 uppercase tracking-widest mb-1">Holdings</span>
+                      <span className={`text-xl font-black ${cardColor.text}`}>
+                        {portfolio.items.length}
                       </span>
                     </div>
                   </div>
@@ -354,16 +328,17 @@ const Portfolio = () => {
                   <div className="space-y-4 max-h-60 overflow-y-auto pr-2 custom-scrollbar">
                     {Object.entries(groupItemsByCategory(portfolio.items)).map(([category, items]) => (
                       <div key={category} className="space-y-2">
-                        <h4 className="text-[10px] font-black text-gray-500 uppercase tracking-widest border-b border-white/5 pb-1">
-                          {category.toLowerCase()}
+                        <h4 className="text-[10px] font-black text-gray-600 uppercase tracking-widest flex items-center">
+                          <span className="w-1.5 h-1.5 rounded-full bg-light-accent mr-2"></span>
+                          {category}
                         </h4>
                         <div className="flex flex-wrap gap-2">
                           {items.map((item) => (
-                            <div key={item.stock.id} className="flex items-center space-x-1 bg-white/5 px-2.5 py-1 rounded-md border border-white/5">
-                              <span className="text-[10px] font-black text-gray-200 uppercase">
+                            <div key={item.stock.id} className="flex items-center space-x-1.5 bg-secondary-dark/80 px-3 py-1.5 rounded-xl border border-white/10 hover:border-light-accent/30 transition-colors">
+                              <span className="text-[11px] font-black text-white uppercase">
                                 {item.stock.symbol.split('.')[0]}
                               </span>
-                              <span className={`text-[10px] font-black ${cardColor.text}`}>x{item.quantity}</span>
+                              <span className={`text-[11px] font-black ${cardColor.text}`}>x{item.quantity}</span>
                             </div>
                           ))}
                         </div>
@@ -372,26 +347,26 @@ const Portfolio = () => {
                   </div>
                 </div>
                 
-                <div className="px-8 pb-8 space-y-3">
+                <div className="px-8 pb-8 space-y-3 relative z-10">
                   <button 
                     onClick={() => handleOpenAddModal(portfolio)}
-                    className={`w-full ${cardColor.bg} ${cardColor.text} hover:opacity-80 p-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all flex items-center justify-center border ${cardColor.border}`}
+                    className="w-full glass-button p-4 rounded-2xl text-xs font-black uppercase tracking-widest hover:glass-button-active active:scale-95 flex items-center justify-center group/btn"
                   >
-                    <Plus size={16} className="mr-2" />
-                    Add Stocks
+                    <Plus size={18} className="mr-2 group-hover/btn:rotate-90 transition-transform" />
+                    Expand Assets
                   </button>
                   <button 
                     onClick={() => handleBulkAddToCollection(portfolio)}
                     disabled={addingToCollection[portfolio.id]}
-                    className="w-full bg-white/5 hover:bg-white/10 p-3 rounded-xl text-xs font-black text-gray-300 uppercase tracking-widest transition-all border border-white/5 flex items-center justify-center"
+                    className="w-full bg-white/5 hover:bg-white/10 p-4 rounded-2xl text-xs font-black text-gray-400 uppercase tracking-widest transition-all border border-white/10 flex items-center justify-center hover:text-white"
                   >
                     {addingToCollection[portfolio.id] ? (
                       <span className="flex items-center">
                         <Layers size={14} className="animate-spin mr-2" />
-                        Adding...
+                        Processing...
                       </span>
                     ) : (
-                      'Add to My Collection'
+                      'Save to Collection'
                     )}
                   </button>
                 </div>
@@ -400,12 +375,81 @@ const Portfolio = () => {
           })}
         </div>
       ) : (
-        <div className="glass-panel p-20 flex flex-col items-center justify-center text-center border border-white/5">
-          <div className="bg-secondary-dark/50 p-8 rounded-full mb-6 border border-white/5">
-            <Briefcase size={64} className="text-light-accent/60" />
+        <div className="glass-panel p-20 mb-16 flex flex-col items-center justify-center text-center border border-white/5 bg-secondary-dark/30">
+          <div className="bg-white/5 p-8 rounded-[40px] mb-6 border border-white/10 shadow-inner">
+            <Briefcase size={64} className="text-gray-600" />
           </div>
-          <h3 className="text-2xl font-black text-white mb-2">No Portfolios Found</h3>
-          <p className="text-gray-400 max-w-xs mt-2 font-medium">Head over to the Dashboard to create your first investment collection.</p>
+          <h3 className="text-2xl font-black text-white mb-2">Build Your First Portfolio</h3>
+          <p className="text-gray-500 max-w-xs mt-2 font-bold uppercase text-[10px] tracking-widest leading-relaxed">
+            Create custom stock groups to track your favorite market trends.
+          </p>
+        </div>
+      )}
+
+      {/* Built-in Portfolios Section */}
+      {builtInPortfolios.length > 0 && (
+        <div className="pt-12 border-t border-white/5">
+          <div className="flex items-center space-x-3 mb-8">
+            <div className="bg-gray-500/10 p-2.5 rounded-2xl border border-white/10">
+              <Layers className="text-gray-400" size={24} />
+            </div>
+            <div>
+              <h2 className="text-2xl font-black tracking-tight text-white/80">Sector Portfolios</h2>
+              <p className="text-[10px] font-black text-gray-600 uppercase tracking-widest mt-1">Industry-Focused Picks collections</p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 opacity-80 hover:opacity-100 transition-opacity duration-500">
+            {builtInPortfolios.map((portfolio, index) => {
+              return (
+                <div key={portfolio.id} className="bg-secondary-dark/40 rounded-[32px] overflow-hidden group hover:bg-secondary-dark/60 transition-all duration-500 flex flex-col border border-white/5 border-dashed">
+                  <div className="p-8 flex-1">
+                    <div className="flex justify-between items-start mb-6">
+                      <span className="px-3 py-1 bg-white/5 text-gray-500 text-[9px] font-black rounded-lg uppercase tracking-[0.2em] border border-white/10">
+                        SYSTEM
+                      </span>
+                    </div>
+                    
+                    <h3 className="text-xl font-black text-white/70 mb-2 group-hover:text-white transition-colors leading-tight">
+                      {portfolio.name}
+                    </h3>
+                    
+                    <p className="text-gray-500 text-xs font-medium mb-6 line-clamp-2 italic">
+                      {portfolio.description}
+                    </p>
+
+                    <div className="space-y-4 max-h-48 overflow-y-auto pr-2 custom-scrollbar">
+                      <div className="flex flex-wrap gap-2">
+                        {portfolio.items.map((item) => (
+                          <div key={item.stock.id} className="bg-white/5 px-2.5 py-1 rounded-lg border border-white/5 group-hover:border-white/10 transition-colors">
+                            <span className="text-[10px] font-black text-gray-500 uppercase group-hover:text-gray-300">
+                              {item.stock.symbol.split('.')[0]}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="px-8 pb-8">
+                    <button 
+                      onClick={() => handleBulkAddToCollection(portfolio)}
+                      disabled={addingToCollection[portfolio.id]}
+                      className="w-full bg-white/5 hover:bg-light-accent hover:text-secondary-dark p-4 rounded-2xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center border border-white/5 hover:border-light-accent"
+                    >
+                      {addingToCollection[portfolio.id] ? (
+                        <span className="flex items-center">
+                          <Layers size={14} className="animate-spin mr-2" />
+                          IMPORTING...
+                        </span>
+                      ) : (
+                        'Clone to My Assets'
+                      )}
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
 

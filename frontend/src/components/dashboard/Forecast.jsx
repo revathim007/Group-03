@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine } from 'recharts';
-import { LineChart as LucideLineChart, Search, Clock, Plus, X, TrendingUp, TrendingDown, Info, Briefcase } from 'lucide-react';
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, ReferenceLine, ScatterChart, Scatter, Cell } from 'recharts';
+import { LineChart as LucideLineChart, Search, Clock, Plus, X, TrendingUp, TrendingDown, Info, Briefcase, LayoutGrid } from 'lucide-react';
 import axios from 'axios';
+import { useLocation } from 'react-router-dom';
 
 const Forecast = () => {
+  const location = useLocation();
   const [symbol, setSymbol] = useState('');
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -12,6 +14,9 @@ const Forecast = () => {
   const [suggestions, setSuggestions] = useState([]);
   const [selectedStock, setSelectedStock] = useState(null);
   const [predictionDays, setPredictionDays] = useState(7);
+  const [kmeansData, setKmeansData] = useState(null);
+  const [kmeansLoading, setKmeansLoading] = useState(false);
+  const [kmeansError, setKmeansError] = useState(null);
 
   const [portfolios, setPortfolios] = useState([]);
   const [selectedPortfolio, setSelectedPortfolio] = useState(null);
@@ -49,6 +54,7 @@ const Forecast = () => {
     setSelectedStock(null);
     setData(null);
     setSelectedPortfolio(null);
+    setKmeansData(null);
     if (value) {
       const filtered = stocks.filter(stock =>
         stock.name.toLowerCase().includes(value.toLowerCase()) ||
@@ -72,8 +78,30 @@ const Forecast = () => {
     setSymbol('');
     setSelectedStock(null);
     setData(null);
+    setKmeansData(null);
     setSuggestions([]);
     handlePortfolioSearch(portfolio, predictionDays);
+  };
+
+  const handleKMeansSearch = async (searchSymbol, days) => {
+    if (!searchSymbol) return;
+    setKmeansLoading(true);
+    setKmeansError(null);
+    try {
+      const response = await fetch(`http://localhost:8000/api/stocks/kmeans/${searchSymbol}/?days=${days}`);
+      if (response.ok) {
+        const result = await response.json();
+        setKmeansData(result);
+      } else {
+        const errResult = await response.json();
+        setKmeansError(errResult.error || 'Clustering failed');
+      }
+    } catch (err) {
+      console.error('K-Means fetch error:', err);
+      setKmeansError('Connection error to ML service');
+    } finally {
+      setKmeansLoading(false);
+    }
   };
 
   const handlePortfolioSearch = async (portfolio, days) => {
@@ -146,8 +174,19 @@ const Forecast = () => {
     setSelectedStock(stock);
     setSuggestions([]);
     setSelectedPortfolio(null);
+    setKmeansData(null); // Clear previous data
     handleSearch(stock.symbol, predictionDays);
+    handleKMeansSearch(stock.symbol, predictionDays);
   };
+
+  useEffect(() => {
+    if (location.state && location.state.symbol && stocks.length > 0) {
+      const stock = stocks.find(s => s.symbol === location.state.symbol);
+      if (stock) {
+        handleSuggestionClick(stock);
+      }
+    }
+  }, [location.state, stocks]);
 
   const handleSearch = async (searchSymbol, days) => {
     if (!searchSymbol) return;
@@ -188,7 +227,10 @@ const Forecast = () => {
     const days = parseInt(e.target.value);
     setPredictionDays(days);
     if (selectedStock) {
+      setData(null); // Clear forecast data
+      setKmeansData(null); // Clear kmeans data
       handleSearch(selectedStock.symbol, days);
+      handleKMeansSearch(selectedStock.symbol, days);
     } else if (selectedPortfolio) {
       handlePortfolioSearch(selectedPortfolio, days);
     }
@@ -210,12 +252,12 @@ const Forecast = () => {
             {formattedDate}
           </p>
           <div className="flex items-baseline space-x-2">
-            <p className={`text-2xl font-black ${item.isForecast ? 'text-light-accent' : 'text-white'}`}>
+            <p className={`text-2xl font-black ${item.isForecast ? 'text-[#facc15]' : 'text-white'}`}>
               ${Number(item.price).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
             </p>
           </div>
           <div className="mt-2 flex items-center">
-            <div className={`w-2.5 h-2.5 rounded-full mr-2 ${item.isForecast ? 'bg-light-accent animate-pulse' : 'bg-white'}`}></div>
+            <div className={`w-2.5 h-2.5 rounded-full mr-2 ${item.isForecast ? 'bg-[#facc15] animate-pulse' : 'bg-white'}`}></div>
             <p className="text-[10px] font-black uppercase tracking-tighter text-gray-400">
               {item.isForecast ? 'AI Prediction' : 'Market Price'}
             </p>
@@ -391,7 +433,7 @@ const Forecast = () => {
                           <stop offset="95%" stopColor="#1B1A55" stopOpacity={0} />
                         </linearGradient>
                         <linearGradient id="colorForecast" x1="0" y1="0" x2="0" y2="1">
-                          <stop offset="5%" stopColor="#9290C3" stopOpacity={0.4} />
+                          <stop offset="5%" stopColor="#facc15" stopOpacity={0.4} />
                           <stop offset="95%" stopColor="#1B1A55" stopOpacity={0} />
                         </linearGradient>
                       </defs>
@@ -439,7 +481,7 @@ const Forecast = () => {
                       <Area
                         type="monotone"
                         dataKey="price"
-                        stroke="#9290C3"
+                        stroke="#facc15"
                         strokeWidth={12}
                         fill="none"
                         opacity={0.15}
@@ -464,12 +506,12 @@ const Forecast = () => {
                       <Area
                         type="monotone"
                         dataKey="price"
-                        stroke="#9290C3"
+                        stroke="#facc15"
                         strokeWidth={4}
                         fillOpacity={1}
                         fill="url(#colorForecast)"
                         dot={false}
-                        activeDot={{ r: 6, strokeWidth: 2, stroke: '#1B1A55', fill: '#9290C3' }}
+                        activeDot={{ r: 6, strokeWidth: 2, stroke: '#1B1A55', fill: '#facc15' }}
                         data={data.combined.filter(d => d.isForecast)}
                         isAnimationActive={true}
                       />
@@ -477,13 +519,106 @@ const Forecast = () => {
                   </ResponsiveContainer>
                 </div>
 
+                {kmeansLoading ? (
+                  <div className="mt-8 flex flex-col items-center justify-center space-y-4 p-8 glass-panel border border-white/5">
+                    <div className="w-8 h-8 border-3 border-green-100 border-t-green-500 rounded-full animate-spin"></div>
+                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest">Running K-Means Clustering...</p>
+                  </div>
+                ) : kmeansError ? (
+                  <div className="mt-8 p-6 glass-panel border border-red-500/20 bg-red-500/5 text-center">
+                    <p className="text-xs font-bold text-red-400 uppercase tracking-widest mb-1">Pattern Analysis Unavailable</p>
+                    <p className="text-[10px] text-gray-400">{kmeansError}</p>
+                  </div>
+                ) : kmeansData && (
+                  <div className="mt-8">
+                    <div className="flex justify-between items-center mb-6">
+                      <div>
+                        <h3 className="text-xl font-black text-white flex items-center">
+                          <LayoutGrid size={20} className="mr-2 text-[#4ade80]" />
+                          K-Means Price Clustering
+                        </h3>
+                        <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mt-1">
+                          Identifying price patterns using unsupervised learning
+                        </p>
+                      </div>
+                      <div className="flex space-x-4">
+                        {[
+                          { label: 'Stable', color: '#4ade80' },
+                          { label: 'Volatile', color: '#f87171' },
+                          { label: 'Growth', color: '#60a5fa' }
+                        ].map((cluster, i) => (
+                          <div key={i} className="flex items-center space-x-1">
+                            <div className="w-2 h-2 rounded-full" style={{ backgroundColor: cluster.color }}></div>
+                            <span className="text-[10px] font-bold text-gray-400 uppercase">{cluster.label}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    
+                    <div className="glass-panel p-6 bg-white/5 border border-white/5 h-[300px]">
+                      <ResponsiveContainer width="100%" height="100%">
+                        <ScatterChart margin={{ top: 20, right: 20, bottom: 20, left: 20 }}>
+                          <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#ffffff05" />
+                          <XAxis 
+                            dataKey="date" 
+                            name="Date" 
+                            axisLine={false}
+                            tickLine={false}
+                            tick={{ fill: '#9290C3', fontSize: 10, fontWeight: 700, opacity: 0.6 }}
+                            tickFormatter={(str) => {
+                              const date = new Date(str);
+                              return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                            }}
+                          />
+                          <YAxis 
+                            dataKey="price" 
+                            name="Price" 
+                            axisLine={false}
+                            tickLine={false}
+                            tick={{ fill: '#9290C3', fontSize: 10, fontWeight: 700, opacity: 0.6 }}
+                            domain={['auto', 'auto']}
+                            tickFormatter={(val) => `$${val}`}
+                          />
+                          <Tooltip 
+                            cursor={{ strokeDasharray: '3 3' }}
+                            content={({ active, payload }) => {
+                              if (active && payload && payload.length) {
+                                const data = payload[0].payload;
+                                const colors = ['#4ade80', '#f87171', '#60a5fa'];
+                                return (
+                                  <div className="bg-secondary-dark/95 p-3 border border-white/10 shadow-2xl rounded-xl text-white">
+                                    <p className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">
+                                      {new Date(data.date).toLocaleDateString()}
+                                    </p>
+                                    <p className="text-lg font-black" style={{ color: colors[data.cluster % 3] }}>
+                                      ${data.price.toFixed(2)}
+                                    </p>
+                                    <p className="text-[10px] font-bold opacity-60 uppercase">Cluster {data.cluster + 1}</p>
+                                  </div>
+                                );
+                              }
+                              return null;
+                            }}
+                          />
+                          <Scatter name="Price Points" data={kmeansData.clusters}>
+                            {kmeansData.clusters.map((entry, index) => {
+                              const colors = ['#4ade80', '#f87171', '#60a5fa'];
+                              return <Cell key={`cell-${index}`} fill={colors[entry.cluster % 3]} />;
+                            })}
+                          </Scatter>
+                        </ScatterChart>
+                      </ResponsiveContainer>
+                    </div>
+                  </div>
+                )}
+
                 <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="glass-panel p-6 bg-white/5 border border-white/5 flex items-start space-x-4">
-                    <div className="bg-secondary-dark p-3 rounded-2xl text-light-accent shadow-sm border border-white/10">
+                    <div className="bg-secondary-dark p-3 rounded-2xl text-[#facc15] shadow-sm border border-white/10">
                       <LucideLineChart size={20} />
                     </div>
                     <div>
-                      <h4 className="text-sm font-black text-light-accent uppercase tracking-widest">AI Forecast Insight</h4>
+                      <h4 className="text-sm font-black text-[#facc15] uppercase tracking-widest">AI Forecast Insight</h4>
                       <p className="text-xs text-gray-300 mt-1 leading-relaxed">
                         {data.isPortfolio ? 'Predicted Portfolio Value: ' : 'Predicted price: '}
                         <span className="font-bold text-white">${Number(data.forecast[data.forecast.length - 1].price).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
@@ -501,7 +636,7 @@ const Forecast = () => {
                       <h4 className="text-sm font-black text-white uppercase tracking-widest">Confidence Analysis</h4>
                       <p className="text-xs text-gray-400 mt-1 leading-relaxed">
                         Model using Monte Carlo simulation with historical volatility.
-                        Expected move of <span className="font-bold text-light-accent">{changeStats.value}%</span> over the next {predictionDays} days.
+                        Expected move of <span className="font-bold text-[#facc15]">{changeStats.value}%</span> over the next {predictionDays} days.
                       </p>
                     </div>
                   </div>
@@ -509,9 +644,9 @@ const Forecast = () => {
               </>
             ) : (
               <div className="flex-1 flex flex-col items-center justify-center text-center h-full space-y-6">
-                <div className="w-32 h-32 bg-secondary-dark/80 rounded-full flex items-center justify-center text-light-accent relative animate-pulse border border-white/5">
+                <div className="w-32 h-32 bg-secondary-dark/80 rounded-full flex items-center justify-center text-[#facc15] relative animate-pulse border border-white/5">
                   <LucideLineChart size={64} />
-                  <div className="absolute inset-0 border-2 border-light-accent/30 rounded-full animate-ping"></div>
+                  <div className="absolute inset-0 border-2 border-[#facc15]/30 rounded-full animate-ping"></div>
                 </div>
                 <div className="max-w-xs">
                   <h2 className="text-2xl font-black text-white mb-2">Ready to Forecast?</h2>

@@ -24,6 +24,9 @@ class Portfolio(models.Model):
     stocks = models.ManyToManyField(Stock, through='PortfolioItem', related_name='portfolios')
     created_at = models.DateTimeField(auto_now_add=True)
 
+    class Meta:
+        unique_together = ('user', 'name')
+
     def save(self, *args, **kwargs):
         if not self.portfolio_id:
             # Generate a unique compact ID (e.g., PF-XXXX)
@@ -49,6 +52,7 @@ class Collection(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='collections')
     stock = models.ForeignKey(Stock, on_delete=models.CASCADE, related_name='collected_by')
     portfolio_name = models.CharField(max_length=255, blank=True, null=True)
+    portfolio_id = models.CharField(max_length=20, blank=True, null=True) # Added to track portfolio updates
     added_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -63,6 +67,7 @@ class Purchase(models.Model):
     quantity = models.PositiveIntegerField()
     purchase_price = models.DecimalField(max_digits=15, decimal_places=2)
     total_amount = models.DecimalField(max_digits=15, decimal_places=2)
+    portfolio_name = models.CharField(max_length=255, blank=True, null=True) # Added to group bulk purchases
     purchased_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
